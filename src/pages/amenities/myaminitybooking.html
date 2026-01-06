@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Amenity Bookings</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+        <div class="flex flex-1 flex-col">
+            <div class="relative flex min-h-screen w-full">
+
+                <!-- Main Content -->
+                <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8" >
+                    <div class="flex w-full max-w-6xl flex-col gap-6">
+                        <!-- Breadcrumbs -->
+                        <!-- <div class="flex flex-wrap gap-2 mb-4">
+                            <a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                href="#">Home</a>
+                            <span
+                                class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+                            <a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                href="#">Amenities</a>
+                            <span
+                                class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+                            <span
+                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">My
+                                Bookings</span>
+                        </div> -->
+                        <!-- PageHeading -->
+                        <div class="flex flex-wrap justify-between gap-3 mb-8">
+                            <p
+                                class="text-text-primary-light dark:text-text-primary-dark text-3xl font-bold leading-tight tracking-tight min-w-72">
+                                My Amenity Bookings</p>
+                        </div>
+                        <!-- Upcoming Bookings Section -->
+                        <section>
+                            <!-- SectionHeader -->
+                            <h2
+                                class="text-text-primary-light dark:text-text-primary-dark text-xl font-bold leading-tight tracking-tight pb-4 pt-5 border-b border-border-light dark:border-border-dark mb-6">
+                                Upcoming Bookings</h2>
+                            <div class="space-y-4">
+
+
+                                <!-- Card 2 -->
+                                <div
+                                    class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light dark:bg-card-dark p-6 border border-border-light dark:border-border-dark shadow-sm">
+                                    <div class="flex-[2_2_0px] flex flex-col gap-4 justify-between">
+                                        <div class="flex flex-col gap-1">
+                                            <span
+                                                class="inline-flex items-center gap-2 text-sm font-medium text-green-700 dark:text-green-300">
+                                                <span
+                                                    class="material-symbols-outlined text-base">check_circle</span>Confirmed
+                                            </span>
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight">
+                                                Fitness Center</p>
+                                            <p
+                                                class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                                                Wednesday, September 4, 2024 • 7:00 AM - 8:00 AM</p>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <a href="aminitybookingcalender.html">
+                                                <button
+                                                    class="w-full sm:w-auto inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium leading-6 text-white bg-primary hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
+                                                    <span>Modify</span>
+                                                </button>
+                                            </a>
+                                            <button
+                                                class="w-full sm:w-auto inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium leading-6 text-black hover:text-white bg-red-100 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
+                                                <span>Cancel</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-56 bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-DEFAULT"
+                                        data-alt="Modern fitness center with various exercise equipment"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdH-LGdnmuG06gVLHv9vqxoc05pEK9jnkbYvxiSgWhEh0OMBVShELersuI93D1guEqXUsZbgE0UiXBS9pvHdl6QJi1ccg6ULwiYyUUv1_LDpfEsXO4IEYQu41j-8WKFCi3-av5TdrhkaJwUrEsI8dQ2qSWGku_a4USzsGswW1IP4q56JkpQyYCXk_vZdyJkyqMyQ10MPB5snLe2xl9W3moaXf7EJdYN40GKEjFVK9uFyaK09po6NkfFKNhoVArMQlyGkWQbZYY6uU");'>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Past Bookings Section -->
+                        <section class="mt-12">
+                            <!-- SectionHeader -->
+                            <h2
+                                class="text-text-primary-light dark:text-text-primary-dark text-xl font-bold leading-tight tracking-tight pb-4 pt-5 border-b border-border-light dark:border-border-dark mb-6">
+                                Past Bookings</h2>
+                            <div class="space-y-4">
+                                <!-- Card 3 -->
+                                <div
+                                    class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light dark:bg-card-dark p-6 border border-border-light dark:border-border-dark shadow-sm opacity-70">
+                                    <div class="flex-[2_2_0px] flex flex-col gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <span
+                                                class="inline-flex items-center gap-2 text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+                                                <span
+                                                    class="material-symbols-outlined text-base">event_available</span>Completed
+                                            </span>
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight">
+                                                Party Room</p>
+                                            <p
+                                                class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                                                Friday, August 9, 2024 • 7:00 PM - 11:00 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-56 bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-DEFAULT"
+                                        data-alt="Spacious and modern party room with tables and chairs"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAy0tLHWoW0MtJZSlUC2BoQfOAKaxQVFQK-YCi_AkeZufIq5SSHSCP7KAJb9vYuKjzqEORlacyQ0svYIozAeRCYTVEvcc0epoY9rzj_1eXRuJ7zIzdul_Y_L_uLfrDaCNNX_pEPpe0f97N7nDoC9PHNdzmPDU4YUZRlACbrr_r3_o5YcjXVWMozQSTrZ7hSLSRkxZAc9VFFq3P_qMIqvOmnjAVOjmU1CM53e3r-CUeX3v5bz5UQBSzFeF1YtNNIspftILPeCKsf3Ew");'>
+                                    </div>
+                                </div>
+                                <!-- Card 4 - Cancelled -->
+                                <div
+                                    class="flex flex-col md:flex-row items-stretch justify-between gap-6 rounded-lg bg-card-light dark:bg-card-dark p-6 border border-border-light dark:border-border-dark shadow-sm opacity-70">
+                                    <div class="flex-[2_2_0px] flex flex-col gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <span
+                                                class="inline-flex items-center gap-2 text-sm font-medium text-red-500 dark:text-red-400">
+                                                <span class="material-symbols-outlined text-base">cancel</span>Cancelled
+                                            </span>
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight">
+                                                Swimming Pool</p>
+                                            <p
+                                                class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                                                Sunday, July 21, 2024 • 1:00 PM - 3:00 PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-56 bg-center bg-no-repeat aspect-video md:aspect-square bg-cover rounded-DEFAULT"
+                                        data-alt="Outdoor swimming pool with lounge chairs on a sunny day"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCs7OAVryL3QS0usoj_O0U5ZpW8i6zF39mxHWzlo_nb9yZfiKOF1hpVt2oczihfLvRmEsAyhh6rktTLStNHSlVEMMxWOSjkUDvxLWT-z7om_0er_mtxh7IfF3W3apa9jTQ6blwPRelZxOY_yTeexFeHEwhrQc9SybdF4xM2fGd_spZh2Xz7J9xDij3I9CkMcAeEk9qhxN7DOL5B6r8turAOtq2vscTQaaElAKkxGC3VZ16MWF7TjaDTPRrh26EF-oxR8vNJRUaKI4");'>
+                                    </div>
+                                </div>
+                                <!-- Empty State Example (commented out) -->
+                                <!-- 
+                        <div class="text-center py-16 px-6 bg-gray-50 dark:bg-gray-800/50 rounded-lg border-2 border-dashed border-border-light dark:border-border-dark">
+                            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                                <span class="material-symbols-outlined text-primary text-3xl">event_busy</span>
+                            </div>
+                            <h3 class="mt-4 text-lg font-semibold text-text-primary-light dark:text-text-primary-dark">No past bookings yet</h3>
+                            <p class="mt-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">Your completed or cancelled bookings will appear here.</p>
+                        </div> 
+                        -->
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

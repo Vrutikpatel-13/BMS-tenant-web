@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Maintenance Request Status</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html"
+                        class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe
+                            </h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                Property 101,
+                                Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../amenities/aminitylist.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="flex flex-1 flex-col">
+            <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+                <div class="layout-container flex flex-1 flex-col">
+                    <div class="flex flex-1 justify-center py-5 sm:px-6 lg:px-8">
+                        <div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+                            <!-- TopNavBar -->
+                            <main class="mt-8">
+                                <div
+                                    class="flex flex-col gap-8 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-sm">
+                                    <!-- PageHeading -->
+                                    <div class="flex flex-wrap justify-between gap-4 items-start mb-8">
+                                        <div class="flex flex-col gap-2">
+                                            <p
+                                                class="text-text-primary dark:text-white text-3xl font-bold tracking-tight">
+                                                Maintenance Request Status</p>
+                                            <p class="text-text-secondary dark:text-gray-400 text-base font-normal">
+                                                Request ID: #MR-2024-00123</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center gap-2 h-10 px-4 rounded-lg bg-white dark:bg-gray-700 text-text-primary dark:text-gray-300 shadow-sm border border-gray-200 dark:border-gray-600">
+                                            <span
+                                                class="material-symbols-outlined text-lg text-secondary">notifications_active</span>
+                                            <span class="text-sm font-medium">Notifications On</span>
+                                        </button>
+                                    </div>
+                                    <!-- Visual Status Timeline -->
+                                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 mb-8">
+                                        <div class="flex items-center justify-between">
+                                            <!-- Step 1: Submitted -->
+                                            <div class="flex flex-col items-center w-1/4">
+                                                <div
+                                                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                </div>
+                                                <p class="mt-2 text-sm font-medium text-primary dark:text-primary-400">
+                                                    Submitted</p>
+                                            </div>
+                                            <div class="flex-1 h-1 bg-primary"></div>
+                                            <!-- Step 2: Assigned -->
+                                            <div class="flex flex-col items-center w-1/4">
+                                                <div
+                                                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                </div>
+                                                <p class="mt-2 text-sm font-medium text-primary dark:text-primary-400">
+                                                    Assigned</p>
+                                            </div>
+                                            <div class="flex-1 h-1 bg-primary"></div>
+                                            <!-- Step 3: In Progress -->
+                                            <div class="flex flex-col items-center w-1/4">
+                                                <div
+                                                    class="flex items-center justify-center size-10 rounded-full bg-primary text-white ring-4 ring-primary/20">
+                                                    <span class="material-symbols-outlined">autorenew</span>
+                                                </div>
+                                                <p class="mt-2 text-sm font-medium text-primary dark:text-primary-400">
+                                                    In Progress</p>
+                                            </div>
+                                            <div class="flex-1 h-1 bg-gray-200 dark:bg-gray-700"></div>
+                                            <!-- Step 4: Completed -->
+                                            <div class="flex flex-col items-center w-1/4">
+                                                <div
+                                                    class="flex items-center justify-center size-10 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500">
+                                                    <span class="material-symbols-outlined">flag</span>
+                                                </div>
+                                                <p
+                                                    class="mt-2 text-sm font-medium text-text-secondary dark:text-gray-400">
+                                                    Completed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Main Content Grid -->
+                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                        <div class="lg:col-span-2 flex flex-col gap-8">
+                                            <!-- Vendor Information Card -->
+                                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6">
+                                                <div class="flex flex-col sm:flex-row items-start gap-6">
+                                                    <div class="w-full flex-[2_2_0px] flex flex-col gap-4">
+                                                        <p class="text-lg font-bold text-text-primary dark:text-white">
+                                                            Assigned Technician</p>
+                                                        <div class="flex flex-col gap-1">
+                                                            <p
+                                                                class="text-text-primary dark:text-gray-200 text-base font-bold">
+                                                                John Doe</p>
+                                                            <p class="text-text-secondary dark:text-gray-400 text-sm">
+                                                                Licensed Plumber, ProFix Handyman Services</p>
+                                                        </div>
+                                                        <button
+                                                            class="flex w-fit cursor-pointer items-center justify-center gap-2 rounded-lg h-10 px-4 bg-gray-100 dark:bg-gray-700 text-text-primary dark:text-gray-300 text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600">
+                                                            <span class="material-symbols-outlined text-lg">call</span>
+                                                            <span>Contact Technician</span>
+                                                        </button>
+                                                    </div>
+                                                    <div
+                                                        class="w-full sm:w-auto flex-1 flex justify-center sm:justify-end">
+                                                        <div class="w-32 h-32 bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+                                                            data-alt="Portrait of John Doe, the technician"
+                                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDb-msrUBoVRogQ1a2IU7C3HF866lJO8Q9A7ecmDqqYKG58zjhQmXxad7Epw8hfWanfCvlmxK2MOixbwLnyFJwJ6ONUDPwfMMGSEbrzAvjHIkYBJffEHH1G81h-Ado_7hwyjnwUQmgaG94yhZWYin7Hx36zoDLei9X2Y6VR0YPyEtMld9WgdtRwu0xv4RnP-2LZJ40JL6EOh1gFffWLJueRQuKKiYifGMN5kxWBDvnni2JkbVIcKx3UGG3RyXLY37A5IMFRaQr29pw");'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Service Details Card -->
+                                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6">
+                                                <div class="flex flex-col @container">
+                                                    <div
+                                                        class="flex flex-col w-full min-w-72 grow items-stretch justify-center gap-2">
+                                                        <p
+                                                            class="text-text-primary dark:text-white text-lg font-bold tracking-[-0.015em]">
+                                                            Scheduled Arrival</p>
+                                                        <div
+                                                            class="flex flex-col @lg:flex-row items-start @lg:items-center gap-3 justify-between">
+                                                            <p
+                                                                class="text-text-secondary dark:text-gray-400 text-base font-normal">
+                                                                October 28, 2024, 2:00 PM - 4:00 PM</p>
+                                                            <button
+                                                                class="flex w-full @lg:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-medium hover:bg-primary/90">
+                                                                <span class="truncate">Track Live</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Request Details Section -->
+                                        <div
+                                            class="lg:col-span-1 bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 flex flex-col gap-4">
+                                            <h3 class="text-lg font-bold text-text-primary dark:text-white">Request
+                                                Details</h3>
+                                            <div>
+                                                <p class="text-sm font-medium text-text-primary dark:text-gray-200">
+                                                    Leaky Kitchen Faucet</p>
+                                                <p class="text-sm text-text-secondary dark:text-gray-400">Submitted: Oct
+                                                    26, 2024, 09:15 AM</p>
+                                            </div>
+                                            <p
+                                                class="text-sm text-text-secondary dark:text-gray-400 leading-relaxed border-t border-gray-200 dark:border-gray-700 pt-4">
+                                                The faucet in my kitchen sink has been dripping constantly for the past
+                                                day. It's a steady drip and I'm concerned about the water waste.</p>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-sm font-medium text-text-primary dark:text-gray-200">
+                                                    Attachments</p>
+                                                <div class="grid grid-cols-2 gap-2">
+                                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                                                        data-alt="Photo of the leaky faucet from above"
+                                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzm4lyypQfcVzq-AuPMcQLZj3qMGerwyLCSis6_3WJuSdI08oAaQQYVk-rvjymKycjRRioRF4264a_sCPiDZaX5Q1qT5LkgXz0KVexyfgtgGzK13foxKx4JHuVyyeoP0UoFsLsZbb9xZ1qILLqXnrClme-3N8vzdOL1re12JOp0NYD4gCv9anEhvfpYWy1LuUAmKf32wVC1MLr46mV8eXbejKg5KmlvI2BT2s90FLBoprCq2HI-uElwHmMEG1OlnX1_QeSL-DJ_F0");'>
+                                                    </div>
+                                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                                                        data-alt="Close-up photo of the dripping water from the faucet"
+                                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2TkdHrrRqMNr_hXN3AhNW-qVh7vClOAGPZwhuW6x4HkB4Oc33sAgq-VqZHBYogzOmBemhFpoOLiOuPbrDMi6GomYbvlGyzyvEWTj2Pci71iNCqqpn9r_GLqYaTozNhq4p4qmBkOYfIUVE2MMkRMgIMwqOUKX3ReARnXAu09UV0C5RMzITq9UOCZy_P_jN1u7z9DWa63fbtNpG-RYVbvOoHvLBefcMHg2QbfK3xqg3_jDnktLDuPTktdxYiac363yh1Vj5_gIq0u8");'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

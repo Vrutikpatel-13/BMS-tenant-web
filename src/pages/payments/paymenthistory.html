@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Payment History</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+                    <div class="relative flex min-h-screen w-full">
+                        <!-- SideNavBar -->
+
+                        <!-- Main Content -->
+                        <main class="px-6 md:px-10 lg:px-20 flex flex-1 justify-center py-8">
+                            <div class="layout-content-container flex flex-col w-full max-w-7xl flex-1">
+                                <!-- PageHeading -->
+                                <header class="flex flex-wrap justify-between items-center gap-4 mb-8">
+                                    <div class="flex flex-col gap-1">
+                                        <h1
+                                            class="text-text-primary-light dark:text-text-primary-dark text-3xl font-bold leading-tight tracking-tight">
+                                            Payment History</h1>
+                                        <p
+                                            class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
+                                            View and manage all your past payments.</p>
+                                    </div>
+                                    <button
+                                        class="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-DEFAULT h-10 px-4 bg-primary text-white text-sm font-medium leading-normal shadow-sm hover:bg-primary/90 transition-colors">
+                                        <span class="material-symbols-outlined text-lg">download</span>
+                                        <span class="truncate">Export to PDF</span>
+                                    </button>
+                                </header>
+                                <!-- Chips/Filters -->
+                                <div class="flex gap-2 p-1 mb-6 overflow-x-auto">
+                                    <button
+                                        class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-DEFAULT bg-primary/10 px-4 text-primary text-sm font-medium leading-normal">
+                                        <p>All</p>
+                                    </button>
+                                    <button
+                                        class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-DEFAULT bg-surface-light dark:bg-surface-dark px-4 text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+                                        <p>This Month</p>
+                                    </button>
+                                    <button
+                                        class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-DEFAULT bg-surface-light dark:bg-surface-dark px-4 text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+                                        <p>Last Month</p>
+                                    </button>
+                                    <button
+                                        class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-DEFAULT bg-surface-light dark:bg-surface-dark pl-4 pr-3 text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal border border-border-light dark:border-border-dark hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+                                        <p>Date Range</p>
+                                        <span class="material-symbols-outlined text-lg">calendar_today</span>
+                                    </button>
+                                </div>
+                                <!-- Table -->
+                                <div
+                                    class="overflow-hidden rounded-lg border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-left">
+                                            <thead class="bg-gray-50 dark:bg-white/5">
+                                                <tr>
+                                                    <th
+                                                        class="px-6 py-4 text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Date</th>
+                                                    <th
+                                                        class="px-6 py-4 text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Amount</th>
+                                                    <th
+                                                        class="px-6 py-4 text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Payment Method</th>
+                                                    <th
+                                                        class="px-6 py-4 text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Status</th>
+                                                    <th
+                                                        class="px-6 py-4 text-xs font-medium uppercase tracking-wider text-text-secondary-light dark:text-text-secondary-dark text-right">
+                                                        Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-border-light dark:divide-border-dark">
+                                                <tr>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                        Oct 26, 2023</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        $1,500.00 CAD</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Credit Card ending in 4242</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span
+                                                            class="inline-flex items-center gap-1.5 rounded-full bg-success/10 px-2 py-1 text-xs font-medium text-success">
+                                                            <span class="size-1.5 rounded-full bg-success"></span>
+                                                            Paid
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <a class="text-primary hover:underline" href="../payments/paymentreceipt.html">View
+                                                            Receipt</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                        Sep 26, 2023</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        $1,500.00 CAD</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Bank Transfer</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span
+                                                            class="inline-flex items-center gap-1.5 rounded-full bg-success/10 px-2 py-1 text-xs font-medium text-success">
+                                                            <span class="size-1.5 rounded-full bg-success"></span>
+                                                            Paid
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <a class="text-primary hover:underline" href="#">View
+                                                            Receipt</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                        Aug 26, 2023</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        $1,500.00 CAD</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Credit Card ending in 4242</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span
+                                                            class="inline-flex items-center gap-1.5 rounded-full bg-warning/10 px-2 py-1 text-xs font-medium text-warning">
+                                                            <span class="size-1.5 rounded-full bg-warning"></span>
+                                                            Processing
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <a class="text-primary hover:underline" href="#">View
+                                                            Receipt</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                        Jul 26, 2023</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        $1,500.00 CAD</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Bank Transfer</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span
+                                                            class="inline-flex items-center gap-1.5 rounded-full bg-error/10 px-2 py-1 text-xs font-medium text-error">
+                                                            <span class="size-1.5 rounded-full bg-error"></span>
+                                                            Failed
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <a class="text-primary hover:underline" href="#">View
+                                                            Receipt</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                        Jun 26, 2023</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        $1,500.00 CAD</td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Credit Card ending in 4242</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        <span
+                                                            class="inline-flex items-center gap-1.5 rounded-full bg-success/10 px-2 py-1 text-xs font-medium text-success">
+                                                            <span class="size-1.5 rounded-full bg-success"></span>
+                                                            Paid
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                        <a class="text-primary hover:underline" href="#">View
+                                                            Receipt</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- Pagination -->
+                                <nav
+                                    class="flex items-center justify-between border-t border-border-light dark:border-border-dark pt-6 mt-6">
+                                    <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                        Showing <span
+                                            class="font-medium text-text-primary-light dark:text-text-primary-dark">1</span>
+                                        to <span
+                                            class="font-medium text-text-primary-light dark:text-text-primary-dark">5</span>
+                                        of <span
+                                            class="font-medium text-text-primary-light dark:text-text-primary-dark">20</span>
+                                        results
+                                    </p>
+                                    <div class="flex items-center gap-1">
+                                        <a class="flex size-9 items-center justify-center rounded-DEFAULT border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
+                                            href="#">
+                                            <span class="material-symbols-outlined text-xl">chevron_left</span>
+                                        </a>
+                                        <a class="text-sm font-medium flex size-9 items-center justify-center text-white rounded-DEFAULT bg-primary"
+                                            href="#">1</a>
+                                        <a class="text-sm font-medium flex size-9 items-center justify-center text-text-primary-light dark:text-text-primary-dark rounded-DEFAULT hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
+                                            href="#">2</a>
+                                        <a class="text-sm font-medium flex size-9 items-center justify-center text-text-primary-light dark:text-text-primary-dark rounded-DEFAULT hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
+                                            href="#">3</a>
+                                        <a class="text-sm font-medium flex size-9 items-center justify-center text-text-primary-light dark:text-text-primary-dark rounded-DEFAULT hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
+                                            href="#">4</a>
+                                        <a class="flex size-9 items-center justify-center rounded-DEFAULT border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
+                                            href="#">
+                                            <span class="material-symbols-outlined text-xl">chevron_right</span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

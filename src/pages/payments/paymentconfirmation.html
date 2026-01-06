@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment Confirmation</title>
+<link href="../../../css/output.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<style>
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #f00;
+            border-radius: 50%;
+            animation: confetti-fall 2s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100px) rotateZ(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotateZ(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light text-text-primary-light">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="flex flex-1 flex-col">
+            <!-- Main Content -->
+            <div class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center overflow-hidden p-4 sm:p-6 lg:p-8">
+                <!-- START: Confetti Animation Placeholder -->
+                <!-- In a real application, this would be generated by JavaScript for a dynamic effect -->
+                <div class="absolute inset-0 pointer-events-none">
+                    <div class="confetti" style="background-color: #2563EB; left: 10%; animation-delay: 0s;"></div>
+                    <div class="confetti" style="background-color: #10B981; left: 20%; animation-delay: 0.3s;"></div>
+                    <div class="confetti" style="background-color: #F59E0B; left: 30%; animation-delay: 0.1s;"></div>
+                    <div class="confetti" style="background-color: #22C52E; left: 40%; animation-delay: 0.5s;"></div>
+                    <div class="confetti" style="background-color: #EF4444; left: 50%; animation-delay: 0.2s;"></div>
+                    <div class="confetti" style="background-color: #2563EB; left: 60%; animation-delay: 0.4s;"></div>
+                    <div class="confetti" style="background-color: #10B981; left: 70%; animation-delay: 0.15s;"></div>
+                    <div class="confetti" style="background-color: #F59E0B; left: 80%; animation-delay: 0.6s;"></div>
+                    <div class="confetti" style="background-color: #22C52E; left: 90%; animation-delay: 0.35s;"></div>
+                </div>
+                <!-- END: Confetti Animation Placeholder -->
+                <div class="relative w-full max-w-lg rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 text-center shadow-lg sm:p-8">
+                    <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-success/10">
+                        <span class="material-symbols-outlined text-4xl text-success" data-icon="check_circle">check_circle</span>
+                    </div>
+                    <h1 class="text-2xl font-bold tracking-tight text-text-primary-light dark:text-text-primary-dark sm:text-3xl">Payment Successful!</h1>
+                    <p class="mt-2 text-sm text-text-secondary-light dark:text-text-secondary-dark sm:text-base">
+                        Your rent payment for has been processed. A receipt has also been sent to your email on file.
+                    </p>
+                    <div class="my-6 space-y-3 text-left sm:my-8 sm:space-y-4">
+                        <div class="flex justify-between gap-x-4 py-2">
+                            <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Amount Paid</p>
+                            <p class="text-sm font-semibold text-text-primary-light dark:text-text-primary-dark text-right">$1,500.00 CAD</p>
+                        </div>
+                        <div class="flex justify-between gap-x-4 py-2">
+                            <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Payment Method</p>
+                            <p class="text-sm font-semibold text-text-primary-light dark:text-text-primary-dark text-right">Visa ending in •••• 1234</p>
+                        </div>
+                        <div class="flex justify-between gap-x-4 py-2">
+                            <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Confirmation Number</p>
+                            <p class="text-sm font-semibold text-text-primary-light dark:text-text-primary-dark text-right">TXN-1A2B3C4D5E6F</p>
+                        </div>
+                        <div class="flex justify-between gap-x-4 py-2">
+                            <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Transaction Date</p>
+                            <p class="text-sm font-semibold text-text-primary-light dark:text-text-primary-dark text-right">October 26, 2023, 10:05 AM</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 sm:flex-row sm:justify-center">
+                        <button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90 sm:w-auto">
+                            <span class="truncate">Download PDF</span>
+                        </button>
+                        <button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary/10 text-primary dark:bg-primary/20 dark:text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors hover:bg-primary/20 dark:hover:bg-primary/30 sm:w-auto">
+                            <span class="truncate">Email Receipt</span>
+                        </button>
+                    </div>
+                    <a class="mt-6 inline-block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark underline transition-colors hover:text-primary dark:hover:text-primary" href="../dashboard/dashboard.html">Back to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>

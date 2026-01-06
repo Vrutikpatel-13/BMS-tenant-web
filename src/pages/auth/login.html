@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tenant Portal Login</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .carousel-item {
+            display: none;
+        }
+
+        .carousel-item.active {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-white">
+    <div class="flex flex-row min-h-screen">
+
+        <div class="flex flex-1 flex-col">
+            
+            <div class="flex flex-row min-h-screen">
+
+                <div class="flex flex-1 flex-col">
+
+
+            <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+                <div class="layout-container flex flex-1 flex-col">
+                    <div class="flex flex-1 items-stretch">
+                        <div class="flex w-full flex-col lg:flex-row">
+                            <!-- Left Panel: Carousel -->
+                            <div
+                                class="relative flex w-full flex-col items-center justify-center bg-primary p-8 lg:w-1/2 lg:p-12">
+                                <a class="absolute top-8 right-8 text-white/80 hover:text-white text-sm font-medium"
+                                    href="#">Skip</a>
+                                <div class="flex flex-col max-w-md w-full">
+                                    <!-- Carousel slides will be managed here, only one shown at a time -->
+                                    <div class="relative w-full">
+                                        <!-- Slide 1 -->
+                                        <div class="carousel-item active w-full flex-col items-center text-center">
+                                            <div
+                                                class="flex h-48 w-48 items-center justify-center rounded-full bg-white/20 mb-8">
+                                                <span
+                                                    class="material-symbols-outlined text-white !text-8xl">payments</span>
+                                            </div>
+                                            <h2 class="text-3xl font-bold text-white mb-4">Pay Rent Instantly</h2>
+                                            <p class="text-white/80 text-base leading-relaxed">Securely pay your rent
+                                                from
+                                                anywhere, anytime. Set
+                                                up recurring payments and never miss a due date.</p>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="carousel-item w-full flex-col items-center text-center">
+                                            <div
+                                                class="flex h-48 w-48 items-center justify-center rounded-full bg-white/20 mb-8">
+                                                <span
+                                                    class="material-symbols-outlined text-white !text-8xl">construction</span>
+                                            </div>
+                                            <h2 class="text-3xl font-bold text-white mb-4">Report Issues Quickly</h2>
+                                            <p class="text-white/80 text-base leading-relaxed">Submit maintenance
+                                                requests with
+                                                ease and track
+                                                their progress right from your portal.</p>
+                                        </div>
+                                        <!-- Slide 3 -->
+                                        <div class="carousel-item w-full flex-col items-center text-center">
+                                            <div
+                                                class="flex h-48 w-48 items-center justify-center rounded-full bg-white/20 mb-8">
+                                                <span
+                                                    class="material-symbols-outlined text-white !text-8xl">forum</span>
+                                            </div>
+                                            <h2 class="text-3xl font-bold text-white mb-4">Stay Connected</h2>
+                                            <p class="text-white/80 text-base leading-relaxed">Receive important
+                                                building
+                                                announcements, community
+                                                updates, and messages from management.</p>
+                                        </div>
+                                        <!-- Slide 4 -->
+                                        <div class="carousel-item w-full flex-col items-center text-center">
+                                            <div
+                                                class="flex h-48 w-48 items-center justify-center rounded-full bg-white/20 mb-8">
+                                                <span
+                                                    class="material-symbols-outlined text-white !text-8xl">folder_open</span>
+                                            </div>
+                                            <h2 class="text-3xl font-bold text-white mb-4">Access Documents Anytime</h2>
+                                            <p class="text-white/80 text-base leading-relaxed">Your lease, notices, and
+                                                other
+                                                important files are
+                                                always available for you to view and download.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Carousel Navigation -->
+                                    <div class="flex items-center justify-between mt-16">
+                                        <div class="flex gap-2">
+                                            <button class="h-2 w-2 rounded-full bg-white"></button>
+                                            <button class="h-2 w-2 rounded-full bg-white/50"></button>
+                                            <button class="h-2 w-2 rounded-full bg-white/50"></button>
+                                            <button class="h-2 w-2 rounded-full bg-white/50"></button>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center rounded-full h-12 w-12 bg-white text-primary hover:bg-white/90">
+                                            <span class="material-symbols-outlined">arrow_forward</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Panel: Authentication Form -->
+                            <div
+                                class="flex w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-8 lg:w-1/2 lg:p-12">
+                                <div class="flex w-full max-w-sm flex-col items-center">
+                                    <div class="flex items-center gap-3 mb-8">
+                                        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                                            <span class="material-symbols-outlined text-white">apartment</span>
+                                        </div>
+                                        <span class="text-xl font-bold text-text-primary dark:text-white">Urban Nest
+                                            Properties</span>
+                                    </div>
+                                    <!-- Page Heading -->
+                                    <div class="text-center w-full mb-8">
+                                        <p
+                                            class="text-text-primary dark:text-white text-3xl font-bold leading-tight tracking-tight">
+                                            Tenant
+                                            Portal Login</p>
+                                        <p
+                                            class="text-text-secondary dark:text-gray-400 text-base font-normal leading-normal mt-2">
+                                            Welcome
+                                            back! Please sign in to your account.</p>
+                                    </div>
+                                    <!-- Segmented Buttons -->
+                                    <div class="w-full">
+                                        <div
+                                            class="flex h-10 w-full items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 p-1 mb-6">
+                                            <label
+                                                class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-sm has-[:checked]:text-text-primary text-text-secondary text-sm font-medium leading-normal dark:has-[:checked]:bg-gray-700 dark:has-[:checked]:text-white dark:text-gray-400">
+                                                <span class="truncate">Email</span>
+                                                <input checked="" class="invisible w-0" name="login-method" type="radio"
+                                                    value="Email" />
+                                            </label>
+                                            <label
+                                                class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-sm has-[:checked]:text-text-primary text-text-secondary text-sm font-medium leading-normal dark:has-[:checked]:bg-gray-700 dark:has-[:checked]:text-white dark:text-gray-400">
+                                                <span class="truncate">Phone</span>
+                                                <input class="invisible w-0" name="login-method" type="radio"
+                                                    value="Phone" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Login Form -->
+                                    <div class="flex w-full flex-col gap-4">
+                                        <!-- Email Field -->
+                                        <label class="flex flex-col w-full">
+                                            <p
+                                                class="text-text-primary dark:text-gray-300 text-sm font-medium leading-normal pb-2">
+                                                Email Address
+                                            </p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-white h-12 placeholder:text-text-secondary px-3.5 text-base font-normal leading-normal dark:placeholder:text-gray-500"
+                                                placeholder="Enter your email address" value="" />
+                                        </label>
+                                        <!-- Password Field -->
+                                        <div class="flex flex-col w-full">
+                                            <div class="flex justify-between items-center pb-2">
+                                                <p
+                                                    class="text-text-primary dark:text-gray-300 text-sm font-medium leading-normal">
+                                                    Password</p>
+                                                <a class="text-primary text-sm font-medium hover:underline"
+                                                    href="#">Forgot
+                                                    Password?</a>
+                                            </div>
+                                            <div class="relative flex w-full flex-1 items-stretch">
+                                                <input
+                                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-white h-12 placeholder:text-text-secondary px-3.5 pr-10 text-base font-normal leading-normal dark:placeholder:text-gray-500"
+                                                    placeholder="Enter your password" type="password" value="" />
+                                                <button
+                                                    class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-text-secondary dark:text-gray-400">
+                                                    <span
+                                                        class="material-symbols-outlined !text-xl">visibility_off</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Sign In Button -->
+                                        <a href="../../pages/dashboard/dashboard.html"
+                                            class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 mt-2">
+                                            <span class="truncate">Sign In</span>
+                                        </a>
+                                    </div>
+                                    <!-- Divider -->
+                                    <div class="flex w-full items-center gap-4 my-6">
+                                        <hr class="w-full border-gray-200 dark:border-gray-700" />
+                                        <p class="text-text-secondary dark:text-gray-500 text-sm font-normal shrink-0">
+                                            Or
+                                            continue with</p>
+                                        <hr class="w-full border-gray-200 dark:border-gray-700" />
+                                    </div>
+                                    <!-- Social & Biometric Login -->
+                                    <div class="grid grid-cols-2 gap-4 w-full">
+                                        <button
+                                            class="flex h-11 items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
+                                            <img class="h-5 w-5" data-alt="Google logo"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzdqqfIatbw0m2gpiFBbL5TOsQtHceAd4Uaw5N66bfEoHST_WbJZXbLOH7vThX23HxKngNS3AhJe137MdlsY5bTv1YnaxAn3x_jz-f4uupuXg11to1z6u_8WCTw3BWqafwCMA3KGjZtHgEX9Dt32Pi2JMhPS5nUia2vErVxI9RwhcsbXHiuqoOhxdbgepAAwKPHHo5UEmMCNh00iExoLtxpx-7Nal0Wi-eQCDvHGb3QgNPgVWLW1PZFbMeJESCGe6lVDo2lIpWF_Q" />
+                                            <span
+                                                class="text-sm font-medium text-text-primary dark:text-white">Google</span>
+                                        </button>
+                                        <button
+                                            class="flex h-11 items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
+                                            <img class="h-5 w-5 dark:invert" data-alt="Apple logo"
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzXpWHO8r66uCupeQhZ3XAPRKaHx9EYh9EJfHCh0O-EhIxnQky6XUoBl5NMmcBZmZ6HYLEV-vYlG-bWcw2l3CKftfl_rIE2DpKrgJ2PGIaE6rVBOeshSb7x4z_6y41RvTiDVfQmHkWz4z-1XVEhhcyLHdABgXQR86YEZ4QUlbWFR5e7AqK-UgIoy4Ehas2E4g0BQWfDFt7PD7t_-akWNW5Q4jQfLkoTx19gx_AnPoA-mP7-dvKY3_9dBBuCQ1QSVRoWF9H1hkBJ1s" />
+                                            <span
+                                                class="text-sm font-medium text-text-primary dark:text-white">Apple</span>
+                                        </button>
+                                    </div>
+                                    <button
+                                        class="flex items-center justify-center gap-2 mt-4 text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+                                        <span class="material-symbols-outlined !text-xl">fingerprint</span>
+                                        <span class="text-sm font-medium">Use Biometrics</span>
+                                    </button>
+                                    <!-- Sign Up Link -->
+                                    <p class="text-sm text-text-secondary dark:text-gray-400 mt-8">New to the portal? <a
+                                            class="font-bold text-primary hover:underline"
+                                            href="../auth/registration.html">Create an account</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+</div>
+</body>
+
+</html>

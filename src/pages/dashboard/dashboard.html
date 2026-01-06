@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tenant Dashboard</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light text-text-primary-light">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+                    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+                            <div class="w-full flex flex-1 justify-center py-5 lg:px-8">
+                                <div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+                                    <header class="flex items-center justify-between whitespace-nowrap px-4 py-3">
+                                        <div class="flex items-center gap-4">
+                                            <h1 class="text-xl md:text-2xl font-bold leading-tight tracking-tight">Hi
+                                                Olivia,
+                                            </h1>
+                                            <div
+                                                class="hidden sm:flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                                                <span class="material-symbols-outlined text-base">apartment</span>
+                                                <span>Maple Creek - Unit 402</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-1 justify-end gap-4">
+                                            <button
+                                                class="relative flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white border border-border-light text-text-secondary-light">
+                                                <span class="material-symbols-outlined">notifications</span>
+                                                <div
+                                                    class="absolute top-2 right-2 size-2.5 rounded-full bg-error border-2 border-white">
+                                                </div>
+                                            </button>
+                                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                                data-alt="User profile picture of Olivia"
+                                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBg6lXnxBwJUAv800ICpNb09wel_w57tWoL2ppwA7cd3jZHhwixmtdCM0n-QDExc_3FmyCbEfbrJRSDC0AcbNyjw2mzk419XfOTm9NvL3STelvUSFNIATfDEkCL4JRVkpPZQbqpVPa_GcymIoXzjBbbUpz2CtJTaAA9etKm3gM36uxmqtg-pNwGbxQFcJ-L39RV5P9DU9ENREjHZQKgIXmQruLwkCAZjyVMR6XAeKl4sv2mGZucmlRl9_r-3_vHF_HPCGxNIspW1VQ");'>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <main class="p-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                        <div class="lg:col-span-2 flex flex-col gap-6">
+                                            <!-- Rent Payment Card -->
+                                            <div
+                                                class="flex flex-col sm:flex-row items-stretch justify-between gap-6 rounded-lg bg-white p-6 shadow-sm border-t-4 border-error">
+                                                <div class="flex flex-col gap-2">
+                                                    <p class="text-error text-sm font-bold uppercase">Overdue</p>
+                                                    <p class="text-2xl font-bold text-text-primary-light">
+                                                        $1,850.00 was due on July 1, 2024</p>
+                                                    <p class="text-text-secondary-light text-sm">Next
+                                                        payment due on August 1, 2024</p>
+                                                    <a href="../payments/payment.html"
+                                                        class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-4 bg-primary text-white text-sm font-medium leading-normal w-fit hover:bg-primary/90 transition-colors">
+                                                        <span class="truncate">Pay Now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- Quick Actions -->
+                                            <div>
+                                                <h2 class="text-lg font-bold leading-tight tracking-tight px-0 pb-3">
+                                                    Quick
+                                                    Actions</h2>
+                                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                                    <a href="../payments/payment.html"
+                                                        class="flex flex-col items-center justify-center gap-3 rounded-lg border border-border-light bg-white p-4 aspect-square hover:bg-slate-50 transition-colors cursor-pointer">
+                                                        <span
+                                                            class="material-symbols-outlined text-primary text-3xl">paid</span>
+                                                        <h2 class="text-base font-bold text-center">Pay Rent</h2>
+                                                    </a>
+                                                    <a href="../maintenance/requesthistory.html"
+                                                        class="flex flex-col items-center justify-center gap-3 rounded-lg border border-border-light bg-white p-4 aspect-square hover:bg-slate-50 transition-colors cursor-pointer">
+                                                        <span
+                                                            class="material-symbols-outlined text-primary text-3xl">construction</span>
+                                                        <h2 class="text-base font-bold text-center">Maintenance Request
+                                                        </h2>
+                                                    </a>
+                                                    <a href="../communications/conversationthread.html"
+                                                        class="flex flex-col items-center justify-center gap-3 rounded-lg border border-border-light bg-white p-4 aspect-square hover:bg-slate-50 transition-colors cursor-pointer">
+                                                        <span
+                                                            class="material-symbols-outlined text-primary text-3xl">chat_bubble</span>
+                                                        <h2 class="text-base font-bold text-center">Messages</h2>
+                                                    </a>
+                                                    <a href="../documents/documentslibrary.html"
+                                                        class="flex flex-col items-center justify-center gap-3 rounded-lg border border-border-light bg-white p-4 aspect-square hover:bg-slate-50 transition-colors cursor-pointer">
+                                                        <span
+                                                            class="material-symbols-outlined text-primary text-3xl">folder</span>
+                                                        <h2 class="text-base font-bold text-center">Documents</h2>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- Active Maintenance Requests -->
+                                            <div>
+                                                <h2 class="text-lg font-bold leading-tight tracking-tight px-0 pb-3">
+                                                    Active
+                                                    Maintenance
+                                                    Requests</h2>
+                                                <div class="rounded-lg bg-white border border-border-light shadow-sm">
+                                                    <ul class="divide-y divide-border-light">
+                                                        <li
+                                                            class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors cursor-pointer">
+                                                            <div>
+                                                                <p class="font-semibold">Leaky Faucet in Kitchen</p>
+                                                                <p class="text-sm text-text-secondary-light">
+                                                                    Submitted: July 15, 2024</p>
+                                                            </div>
+                                                            <div class="flex items-center gap-2">
+                                                                <span
+                                                                    class="inline-flex items-center rounded-full bg-accent/10 px-2 py-1 text-xs font-medium text-accent">In
+                                                                    Progress</span>
+                                                                <span
+                                                                    class="material-symbols-outlined text-text-secondary-light">chevron_right</span>
+                                                            </div>
+                                                        </li></a>
+                                                        <li
+                                                            class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors cursor-pointer">
+                                                            <div>
+                                                                <p class="font-semibold">AC Unit Not Cooling</p>
+                                                                <p class="text-sm text-text-secondary-light">
+                                                                    Submitted: July 12, 2024</p>
+                                                            </div>
+                                                            <div class="flex items-center gap-2">
+                                                                <span
+                                                                    class="inline-flex items-center rounded-full bg-secondary/10 px-2 py-1 text-xs font-medium text-secondary">Assigned</span>
+                                                                <span
+                                                                    class="material-symbols-outlined text-text-secondary-light">chevron_right</span>
+                                                            </div>
+                                                        </li></a>
+                                                        <li
+                                                            class="flex items-center justify-between p-4 hover:bg-slate-50 transition-colors cursor-pointer">
+                                                            <div>
+                                                                <p class="font-semibold">Window Lock Broken</p>
+                                                                <p class="text-sm text-text-secondary-light">
+                                                                    Submitted: June 28, 2024</p>
+                                                            </div>
+                                                            <div class="flex items-center gap-2">
+                                                                <span
+                                                                    class="inline-flex items-center rounded-full bg-success/10 px-2 py-1 text-xs font-medium text-success">Completed</span>
+                                                                <span
+                                                                    class="material-symbols-outlined text-text-secondary-light">chevron_right</span>
+                                                            </div>
+                                                        </li></a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Building Announcements -->
+                                            <div>
+                                                <div class="flex items-center justify-between px-0 pb-3">
+                                                    <h2 class="text-lg font-bold leading-tight tracking-tight">Building
+                                                        Announcements
+                                                    </h2>
+                                                    <a class="text-sm font-medium text-primary hover:underline"
+                                                        href="../communications/notificationpreference.html">View
+                                                        All</a>
+                                                </div>
+                                                <div
+                                                    class="rounded-lg bg-white p-4 border border-border-light shadow-sm">
+                                                    <h3 class="font-bold">Scheduled Water Shutoff - July 25th</h3>
+                                                    <p class="text-sm text-text-secondary-light mt-1">
+                                                        Please be advised that there will be a scheduled water shutoff
+                                                        on
+                                                        Thursday, July
+                                                        25th, from 10:00 AM to 2:00 PM for mandatory plumbing
+                                                        maintenance...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Lease Information -->
+                                        <div class="lg:col-span-1">
+                                            <div class="sticky top-6 flex flex-col gap-6">
+                                                <div
+                                                    class="rounded-lg bg-white shadow-sm border border-border-light overflow-hidden">
+                                                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                                                        data-alt="Exterior view of the Maple Creek apartment building"
+                                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNdhBItzpGTkSzyEk3pA6xre3JPC3tyzLBY7ySW_kMQomTusWawjWI10AR5WNJiUzl82rJS74_Txsr5SfDx4aIrvdFuBcEVXa3zY8Q31UJTzj87Sqbv2u88wg7-sJSaqqCltFDp07isFUrQ8i1BJaITXvnseoF-O0EEh3EcHa8PFnpGN8jXG7kZ4mZeiRnzexzrmgt1lgzdQx_a9yBnyQwBsy2UZYyVn5x-OXIjxlPH2i4d0xS0VfZyJ48-aQ0dfZQTr8Gr95aAlc");'>
+                                                    </div>
+                                                    <div class="p-4 flex flex-col gap-4">
+                                                        <div>
+                                                            <p class="text-sm text-text-secondary-light">
+                                                                Unit 402</p>
+                                                            <p class="font-semibold">123 Maple Creek Lane, Ottawa, ON
+                                                                K1A 0B1
+                                                            </p>
+                                                        </div>
+                                                        <div class="border-t border-border-light pt-4">
+                                                            <p class="text-sm text-text-secondary-light">
+                                                                Lease End Date</p>
+                                                            <p class="font-semibold">October 31, 2024 <span
+                                                                    class="text-text-secondary-light font-normal">(in
+                                                                    95 days)</span></p>
+                                                        </div>
+                                                        <div class="border-t border-border-light pt-4">
+                                                            <p class="text-sm text-text-secondary-light">
+                                                                Monthly Rent</p>
+                                                            <p class="font-semibold">$1,850.00</p>
+                                                        </div>
+                                                        <div
+                                                            class="border-t border-border-light pt-4 flex flex-col gap-3">
+                                                            <p class="text-sm text-text-secondary-light">
+                                                                Property Manager</p>
+                                                            <div class="flex items-center justify-between">
+                                                                <div class="flex items-center gap-3">
+                                                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                                                        data-alt="Profile picture of John Smith"
+                                                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARgqKtnN4B02uz5DhjKgm4n2T1xuEoZMzZT4m3QmgKgn67t7BEAzYYwA94o0LaD99HW3QYTx4NtkcwMunUzaDpC6fmrOU9o_iznBL-nktnM37evvwIrRaFOaRT3S75NiGPz_9LQOvq1Gwz7MeN1I12-1YTEVP0_kcrpzZhg3NwRRZNtiRugUeWmx1jqRR6vaVz4QKyM91r22uNA8VxXPR_pOUtI_ns6Zc4OAP56dYo80fe7eku4FVUxUU1Fsjd-P03ITNyJLschuw");'>
+                                                                    </div>
+                                                                    <p class="font-semibold">John Smith</p>
+                                                                </div>
+                                                                <div class="flex items-center gap-2">
+                                                                    <button
+                                                                        class="flex items-center justify-center size-9 rounded-full border border-border-light hover:bg-slate-100 transition-colors">
+                                                                        <span
+                                                                            class="material-symbols-outlined text-xl text-text-secondary-light">call</span>
+                                                                    </button>
+                                                                    <button
+                                                                        class="flex items-center justify-center size-9 rounded-full border border-border-light hover:bg-slate-100 transition-colors">
+                                                                        <span
+                                                                            class="material-symbols-outlined text-xl text-text-secondary-light">email</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

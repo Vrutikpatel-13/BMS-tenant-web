@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Manage Parking - Building Management System</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-200">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+        <div class="flex flex-1 flex-col">
+            <div class="relative flex min-h-screen w-full">
+                <!-- Main Content -->
+                <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
+                    <div class="w-full max-w-7xl">
+                        <!-- Page Header -->
+                        <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+                            <div class="flex min-w-72 flex-col gap-2">
+                                <div class="flex items-center gap-3">
+                                    
+                                    <div>
+                                        <h1 class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-primary-light dark:text-text-primary-dark">Manage My Parking</h1>
+                                        <p class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark mt-1">
+                                            View your assigned parking spot and manage vehicle information.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-error text-white text-sm font-bold leading-normal tracking-wide hover:bg-red-700 transition-colors shadow-lg">
+                                <span class="material-symbols-outlined">report</span> Report a Violation
+                            </button>
+                        </div>
+
+                        <!-- Content Grid -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                            <!-- Left Column -->
+                            <div class="lg:col-span-1 flex flex-col gap-8">
+                                <!-- Assigned Spot Card -->
+                                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+                                    <div class="flex flex-col items-center text-center gap-4">
+                                        <div class="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full">
+                                            <span class="material-symbols-outlined text-primary" style="font-size: 36px;">pin_drop</span>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal uppercase tracking-wide">Your Assigned Spot</p>
+                                            <p class="text-primary text-6xl font-black leading-tight tracking-[-0.033em]">P2-147</p>
+                                            <div class="flex items-center justify-center gap-2 pt-2">
+                                                <span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark" style="font-size: 20px;">location_on</span>
+                                                <p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">Level P2, North Wing</p>
+                                            </div>
+                                        </div>
+                                        <div class="w-full pt-4 border-t border-gray-200 dark:border-gray-700">
+                                            <div class="flex items-center justify-center gap-2 text-success">
+                                                <span class="material-symbols-outlined" style="font-size: 20px;">check_circle</span>
+                                                <p class="text-sm font-medium">Active and Available</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Parking Regulations -->
+                                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <div class="flex items-center justify-center w-10 h-10 bg-warning/10 rounded-full">
+                                            <span class="material-symbols-outlined text-warning" style="font-size: 24px;">gavel</span>
+                                        </div>
+                                        <h2 class="text-text-primary-light dark:text-text-primary-dark text-xl font-bold leading-tight tracking-[-0.015em]">Key Parking Regulations</h2>
+                                    </div>
+                                    <div class="flex flex-col gap-y-4">
+                                        <div class="flex gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                                            <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 mt-0.5" style="font-size: 20px;">person</span>
+                                            <div class="flex-1">
+                                                <p class="text-blue-900 dark:text-blue-100 text-sm font-semibold mb-1">Visitor Parking</p>
+                                                <p class="text-blue-800 dark:text-blue-200 text-sm font-normal leading-relaxed">
+                                                    All visitor vehicles must be registered at the front desk and may only park in designated visitor spots for a maximum of 4 hours.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-3 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
+                                            <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 mt-0.5" style="font-size: 20px;">bedtime</span>
+                                            <div class="flex-1">
+                                                <p class="text-amber-900 dark:text-amber-100 text-sm font-semibold mb-1">Overnight Rules</p>
+                                                <p class="text-amber-800 dark:text-amber-200 text-sm font-normal leading-relaxed">
+                                                    Overnight parking is permitted for registered tenant vehicles only. Guest vehicles parked overnight without a permit will be towed.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                                            <span class="material-symbols-outlined text-green-600 dark:text-green-400 mt-0.5" style="font-size: 20px;">verified</span>
+                                            <div class="flex-1">
+                                                <p class="text-green-900 dark:text-green-100 text-sm font-semibold mb-1">Vehicle Registration</p>
+                                                <p class="text-green-800 dark:text-green-200 text-sm font-normal leading-relaxed">
+                                                    Ensure your vehicle's license plate and model are up to date in your tenant profile at all times.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Column - Parking Map -->
+                            <div class="lg:col-span-2 flex flex-col gap-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-full">
+                                        <span class="material-symbols-outlined text-primary" style="font-size: 24px;">map</span>
+                                    </div>
+                                    <h2 class="text-text-primary-light dark:text-text-primary-dark text-xl font-bold leading-tight tracking-[-0.015em]">Parking Location Map</h2>
+                                </div>
+                                <div class="relative">
+                                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg border-2 border-gray-200 dark:border-gray-700" data-alt="A map of the P2 parking level, with spot 147 highlighted in amber" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfevzW5a4smionzc4su5XbKyYCtQgPduwpbRYacuJzqM2jHC1OTg6XyBlqqzPnsFjTsMPaCCReOoFvcCmlQ5Z5dBf7iojEPwxymxtK3cRc_qDpQFYMEU_eZHghlGSDEOsRO0HvMRWfz8Qoayw9NndTyz4ProhDKhrkR4J_Mra41ybaSOmdLvomgoa_V8JTEq-q_YGflUMZOs3w6XMlFDGrBtiDZdvto3R-NW7uhQilYorUXr0LoNeWiBneqq5Rv4dH5OpgGdXgHjk");'>
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                                        <div class="absolute" style="top: 45%; left: 30%;">
+                                            <div class="relative flex flex-col items-center">
+                                                <div class="absolute inset-0 bg-accent rounded-full animate-ping opacity-75"></div>
+                                                <span class="material-symbols-outlined text-accent text-5xl relative" style="text-shadow: 0 4px 8px rgba(0,0,0,0.3);">fmd_good</span>
+                                                <div class="absolute bottom-full mb-2 w-max px-3 py-1.5 bg-accent text-white text-sm font-bold rounded-md shadow-lg">
+                                                    P2-147 (Your Spot)
+                                                    <div class="absolute left-1/2 -bottom-1 w-2 h-2 bg-accent transform -translate-x-1/2 rotate-45"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600">
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                                            <p class="text-sm font-medium text-text-primary-light dark:text-text-primary-dark">Your assigned parking spot</p>
+                                        </div>
+                                        <button class="text-sm text-primary hover:text-primary/80 font-medium transition-colors">
+                                            <span class="material-symbols-outlined text-lg" style="font-size: 18px;">zoom_in</span>
+                                            Enlarge Map
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

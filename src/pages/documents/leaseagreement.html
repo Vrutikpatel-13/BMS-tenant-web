@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Digital Lease Agreement</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="font-display">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+    
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+
+
+                    <div
+                        class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+                            <div class="flex flex-1 justify-center py-5 sm:px-4 md:px-10 lg:px-20 xl:px-40">
+                                <div class="layout-content-container flex flex-col w-full max-w-[1280px] flex-1">
+                                    <!-- TopNavBar -->
+                                   
+                                    <main
+                                        class="flex flex-col flex-1 p-4 md:p-6 lg:p-8 bg-white dark:bg-background-dark rounded-b-xl shadow-sm">
+                                        <!-- PageHeading -->
+                                        <div
+                                            class="flex flex-wrap justify-between gap-4 pb-6 border-b border-border-light dark:border-border-dark">
+                                            <div class="flex min-w-72 flex-col gap-2">
+                                                <p
+                                                    class="text-text-primary-light dark:text-text-primary-dark text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">
+                                                    Your Digital Lease Agreement</p>
+                                                <p
+                                                    class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
+                                                    Please review the document below. We recommend downloading a copy
+                                                    for your records.</p>
+                                            </div>
+                                            <div class="flex items-start">
+                                                <button
+                                                    class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-4 hover:bg-primary/90 focus:ring-4 focus:ring-primary/30">
+                                                    <span class="material-symbols-outlined">download</span>
+                                                    <span class="truncate">Download Lease</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col lg:flex-row gap-8 mt-6">
+                                            <!-- Main Content Area: PDF Viewer -->
+                                            <div class="flex-1">
+                                                <!-- ToolBar -->
+                                                <div
+                                                    class="flex flex-wrap justify-between items-center gap-4 px-4 py-3 bg-background-light dark:bg-border-dark rounded-t-lg border-b border-border-light dark:border-border-dark">
+                                                    <div class="flex items-center gap-2">
+                                                        <button
+                                                            class="p-2 text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-border-light dark:hover:bg-gray-600">
+                                                            <span class="material-symbols-outlined">zoom_in</span>
+                                                        </button>
+                                                        <button
+                                                            class="p-2 text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-border-light dark:hover:bg-gray-600">
+                                                            <span class="material-symbols-outlined">zoom_out</span>
+                                                        </button>
+                                                        <div class="w-px h-6 bg-border-light dark:bg-gray-600 mx-2">
+                                                        </div>
+                                                        <button
+                                                            class="p-2 text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-border-light dark:hover:bg-gray-600">
+                                                            <span class="material-symbols-outlined">fullscreen</span>
+                                                        </button>
+                                                        <button
+                                                            class="p-2 text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-border-light dark:hover:bg-gray-600">
+                                                            <span class="material-symbols-outlined">print</span>
+                                                        </button>
+                                                    </div>
+                                                    <div
+                                                        class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+                                                        Page 1 of 15</div>
+                                                </div>
+                                                <!-- Images (PDF Viewer Content) -->
+                                                <div
+                                                    class="w-full bg-background-light dark:bg-background-dark p-2 md:p-4 border border-t-0 border-border-light dark:border-border-dark rounded-b-lg">
+                                                    <div class="w-full overflow-hidden aspect-[16/9] flex shadow-lg">
+                                                        <div class="w-full bg-center bg-no-repeat bg-cover aspect-auto flex-1"
+                                                            data-alt="A page from a digital lease agreement document, featuring placeholder text and formatting."
+                                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIhnF-aA9c13QpzPcBJVYZ1XFx9YY5OltNJZT00Vsl0c6vm93UpqxvTM-i4LwNLNKcRyqBjcM0Jyq-f6zNt10CSr8OK1nMr6bfE9AG46ak5YAuweiXufr4pU-IhMTzpOml_Gz5MKX-wx-zBBHZTfBs-CDcvZtKVUadZs7dBIY4Q25UCJ7_KktpWskx4rpLhVTn8X_t0P7uJmWkom7u9edFC_DETO-b82RPLk-QC-rAUC6aKifBdSA8fYpYYpxE99-B8q9qpnN842U");'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Pagination -->
+                                                <div class="flex items-center justify-center p-4 mt-4">
+                                                    <a class="flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark"
+                                                        href="#">
+                                                        <span class="material-symbols-outlined">chevron_left</span>
+                                                    </a>
+                                                    <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white dark:text-white rounded-full bg-primary"
+                                                        href="#">1</a>
+                                                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-background-light dark:hover:bg-border-dark"
+                                                        href="#">2</a>
+                                                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-background-light dark:hover:bg-border-dark"
+                                                        href="#">3</a>
+                                                    <span
+                                                        class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark rounded-full">...</span>
+                                                    <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark rounded-full hover:bg-background-light dark:hover:bg-border-dark"
+                                                        href="#">15</a>
+                                                    <a class="flex size-10 items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark"
+                                                        href="#">
+                                                        <span class="material-symbols-outlined">chevron_right</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- Document Information Panel -->
+                                            <aside class="w-full lg:w-80 flex-shrink-0">
+                                                <div
+                                                    class="sticky top-8 p-6 bg-background-light dark:bg-border-dark rounded-xl border border-border-light dark:border-transparent">
+                                                    <h3
+                                                        class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+                                                        Document Details</h3>
+                                                    <div class="space-y-4">
+                                                        <div>
+                                                            <p
+                                                                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+                                                                Property Address</p>
+                                                            <p
+                                                                class="text-base font-semibold text-text-primary-light dark:text-text-primary-dark">
+                                                                456 Maple Avenue, Apt 7B, Toronto, ON, M5H 2N2</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+                                                                Lease Term</p>
+                                                            <p
+                                                                class="text-base font-semibold text-text-primary-light dark:text-text-primary-dark">
+                                                                2024-08-01 to 2025-07-31</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">
+                                                                Status</p>
+                                                            <div class="inline-flex items-center gap-2 mt-1">
+                                                                <span
+                                                                    class="flex size-2 rounded-full bg-success"></span>
+                                                                <p class="text-base font-semibold text-success">Signed
+                                                                    &amp; Active</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Move-In Inspection Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="../../../css/output.css" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-gray-200">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html"
+                                class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">
+                                        John Doe</h1>
+                                    <p
+                                        class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                        Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+                    <div class="layout-container relative flex min-h-screen w-full">
+                        <!-- SideNavBar -->
+
+                        <!-- Main Content -->
+                        <main class="px-6 md:px-10 lg:px-20 flex flex-1 justify-center py-8">
+                            <!-- Header Bar -->
+
+                            <div class="w-full flex flex-1 justify-center py-5 lg:px-8">
+                                <div class="max-w-4xl mx-auto">
+                                    <!-- Page Heading & Actions -->
+                                    <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                                        <div class="flex min-w-72 flex-col gap-1">
+                                            <p
+                                                class="text-text-primary dark:text-white text-3xl font-bold leading-tight tracking-tight">
+                                                Move-In Inspection Report</p>
+                                            <p class="text-text-secondary text-base font-normal leading-normal">123
+                                                Maple Street, Unit 4B - Inspected on October 26, 2023</p>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <button
+                                                class="flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-gray-100 dark:bg-gray-700 text-text-primary dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 dark:hover:bg-gray-600">
+                                                <span class="material-symbols-outlined mr-2 text-base">print</span>
+                                                <span class="truncate">Print Report</span>
+                                            </button>
+                                            <button
+                                                class="flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+                                                <span class="material-symbols-outlined mr-2 text-base">download</span>
+                                                <span class="truncate">Download as PDF</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Summary Card -->
+                                    <div
+                                        class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-border-light dark:border-border-dark mb-8">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+                                            <div class="flex flex-col gap-1">
+                                                <p class="text-text-secondary text-sm font-normal leading-normal">
+                                                    Property Address</p>
+                                                <p
+                                                    class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                    123 Maple Street, Toronto, ON</p>
+                                            </div>
+                                            <div class="flex flex-col gap-1">
+                                                <p class="text-text-secondary text-sm font-normal leading-normal">
+                                                    Inspection Date</p>
+                                                <p
+                                                    class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                    October 26, 2023</p>
+                                            </div>
+                                            <div class="flex flex-col gap-1">
+                                                <p class="text-text-secondary text-sm font-normal leading-normal">Unit
+                                                    Number</p>
+                                                <p
+                                                    class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                    Unit 4B</p>
+                                            </div>
+                                            <div class="flex flex-col gap-1">
+                                                <p class="text-text-secondary text-sm font-normal leading-normal">
+                                                    Participants</p>
+                                                <p
+                                                    class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                    Jane Doe (Tenant), John Smith (Property Manager)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordions -->
+                                    <div class="flex flex-col gap-3">
+                                        <details
+                                            class="flex flex-col rounded-xl border border-border-light dark:border-border-dark bg-white dark:bg-gray-800 px-4 group"
+                                            open="">
+                                            <summary
+                                                class="flex cursor-pointer items-center justify-between gap-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <span
+                                                        class="material-symbols-outlined text-success">check_circle</span>
+                                                    <p
+                                                        class="text-text-primary dark:text-white text-base font-medium leading-normal">
+                                                        Living Room</p>
+                                                </div>
+                                                <span
+                                                    class="material-symbols-outlined text-text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+                                            </summary>
+                                            <div
+                                                class="border-t border-border-light dark:border-border-dark py-4 space-y-4">
+                                                <!-- Condition Item -->
+                                                <div class="grid grid-cols-3 gap-4 items-start">
+                                                    <span class="text-sm text-text-primary dark:text-gray-300">Walls
+                                                        &amp; Ceiling</span>
+                                                    <span
+                                                        class="text-sm inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-success/10 text-success font-medium">
+                                                        <span class="material-symbols-outlined text-xs">check</span>
+                                                        Good
+                                                    </span>
+                                                    <span class="text-sm text-text-secondary">No marks or damage
+                                                        observed. Freshly painted.</span>
+                                                </div>
+                                                <div class="grid grid-cols-3 gap-4 items-start">
+                                                    <span
+                                                        class="text-sm text-text-primary dark:text-gray-300">Flooring</span>
+                                                    <span
+                                                        class="text-sm inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-warning/10 text-warning font-medium">
+                                                        <span
+                                                            class="material-symbols-outlined text-xs">priority_high</span>
+                                                        Fair
+                                                    </span>
+                                                    <span class="text-sm text-text-secondary">Minor scuff mark near the
+                                                        entrance.</span>
+                                                </div>
+                                                <!-- Photo Gallery -->
+                                                <div class="pt-2">
+                                                    <p class="text-sm text-text-secondary mb-2">Photo Evidence</p>
+                                                    <div class="flex gap-3">
+                                                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-20 cursor-pointer"
+                                                            data-alt="Scuff mark on living room floor"
+                                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUcrQvQ3iKs_XhtfpAGpU5UUX6emKUsym2en5thpyZ9A6hMTantAPmDIuyWQcRiPZGERxKLc7dWXRXQ1zakIpHg7MspnTHR6qXosAkUaod-VTkX2qB-YkNqf3fWBvw106F4YKQ0PK2ZfSQAh-t0z1S4No4hjzcQ1mRIP5oWQg5Aake-Fb69M251wT2iRk808o9wPQKg2mqauMTWbRpvcL35k1EldYdk43PvjC6J9PeWR2kl79LgCx-P7uLoJ_BseiFvRhVMKDpgDg");'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details
+                                            class="flex flex-col rounded-xl border border-border-light dark:border-border-dark bg-white dark:bg-gray-800 px-4 group">
+                                            <summary
+                                                class="flex cursor-pointer items-center justify-between gap-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <span class="material-symbols-outlined text-error">cancel</span>
+                                                    <p
+                                                        class="text-text-primary dark:text-white text-base font-medium leading-normal">
+                                                        Kitchen</p>
+                                                </div>
+                                                <span
+                                                    class="material-symbols-outlined text-text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+                                            </summary>
+                                            <div
+                                                class="border-t border-border-light dark:border-border-dark py-4 space-y-4">
+                                                <!-- Condition Item -->
+                                                <div class="grid grid-cols-3 gap-4 items-start">
+                                                    <span
+                                                        class="text-sm text-text-primary dark:text-gray-300">Appliances</span>
+                                                    <span
+                                                        class="text-sm inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-success/10 text-success font-medium">
+                                                        <span class="material-symbols-outlined text-xs">check</span>
+                                                        Good
+                                                    </span>
+                                                    <span class="text-sm text-text-secondary">All appliances tested and
+                                                        working.</span>
+                                                </div>
+                                                <div class="grid grid-cols-3 gap-4 items-start">
+                                                    <span
+                                                        class="text-sm text-text-primary dark:text-gray-300">Faucet</span>
+                                                    <span
+                                                        class="text-sm inline-flex items-center gap-2 px-2 py-0.5 rounded-full bg-error/10 text-error font-medium">
+                                                        <span class="material-symbols-outlined text-xs">close</span>
+                                                        Damaged
+                                                    </span>
+                                                    <span class="text-sm text-text-secondary">Faucet handle is loose and
+                                                        drips slowly. Maintenance request submitted.</span>
+                                                </div>
+                                                <!-- Photo Gallery -->
+                                                <div class="pt-2">
+                                                    <p class="text-sm text-text-secondary mb-2">Photo Evidence</p>
+                                                    <div class="flex gap-3">
+                                                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-20 cursor-pointer"
+                                                            data-alt="Loose faucet handle in kitchen"
+                                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_15zchU-iy_nzBApJtPlxF63raa2CMUzFICTcyeD70AzSj2GNREPkQb2sY5QYEHz1MZ6eI3xJg82-RkB_xLBRSAdr1K3QXT6SWtq-qQJRb4EGVs1mNG0onLarX23g9lJKqgNpvvY2LiPuIcdb-xte78UPwbMaGMniLvZSdXDVv_-hzfDHq6cN7vebVzcNzPDlACIfROhwDCjgAX1VjmqYC_JdR4SHhk4Ff-3lCkYQB0jFZoLan0fleGXaUEoQmfYNHYqhU1XrUlQ");'>
+                                                        </div>
+                                                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-20 cursor-pointer"
+                                                            data-alt="Slow drip from kitchen faucet"
+                                                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcQ36rgwgodCy5GZFA6wUAkyVReyyEe4f0v7ckmF35YEXezcTl07alpV4zudBU_DoYcFrTq7LJ9uBIr3XMD2FNi0aRsa9yC3IzqyJE5Xg3rWysvXpk5cLxVEARorhiKHBHXU3AQMd_cvPezUnNRzlDnUrJheb68CnauyWUmYjGuTzdB6cbQ_m1AB0aK_XgSpoMtMR1wiPnHpsLN6U90MG3tTws3BLTPeC0MAEmQ7hAJz-CGACy5SHJzLomsnib_zO2TsKfIDR4t64");'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details
+                                            class="flex flex-col rounded-xl border border-border-light dark:border-border-dark bg-white dark:bg-gray-800 px-4 group">
+                                            <summary
+                                                class="flex cursor-pointer items-center justify-between gap-6 py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <span
+                                                        class="material-symbols-outlined text-success">check_circle</span>
+                                                    <p
+                                                        class="text-text-primary dark:text-white text-base font-medium leading-normal">
+                                                        Bedroom</p>
+                                                </div>
+                                                <span
+                                                    class="material-symbols-outlined text-text-secondary group-open:rotate-180 transition-transform">expand_more</span>
+                                            </summary>
+                                            <div class="border-t border-border-light dark:border-border-dark py-4">
+                                                <p class="text-text-secondary text-sm">All items in this room were found
+                                                    to be in good condition. No photos were necessary.</p>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <!-- E-Signature Block -->
+                                    <div
+                                        class="mt-8 bg-white dark:bg-gray-800 p-6 rounded-xl border border-border-light dark:border-border-dark">
+                                        <h3 class="text-xl font-bold text-text-primary dark:text-white mb-6">Signatures
+                                        </h3>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                            <div>
+                                                <h4 class="text-sm font-medium text-text-secondary mb-2">Tenant
+                                                    Signature</h4>
+                                                <div
+                                                    class="border border-dashed border-border-light dark:border-border-dark rounded-lg p-4 bg-background-light/50 dark:bg-background-dark/50">
+                                                    <img alt="Jane Doe's signature" class="h-16 invert-if-dark"
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWmm24tFZ-qzLVEcCpKDFV0K_s784wjBW7ceV03GEmIcsL3qNZs3vxS0Vua2PfLN921abXojjGpe_u2r3etd2Fwv9LJ4NsZd7kJiwKgAsZT5jzt5BQdBy99mCsHAL086xYXCF4clm3wclH5uuyWepUc5YLVCU__R_m0DnzmKjU4VByFMn-n0GJMdezCNq5dzhAEjfKVue5TZ_TIVCh-1B1BsqcXF0Fv8t7IzzVKLQ-Cr8AcI5ZxrNZXZrkyb3wz4dO6E_yZ9a8m0"
+                                                        style="filter: brightness(0) saturate(100%) invert(8%) sepia(6%) saturate(1611%) hue-rotate(179deg) brightness(97%) contrast(92%);" />
+                                                </div>
+                                                <p class="text-xs text-text-secondary mt-2">Signed by Jane Doe on
+                                                    October 26, 2023, 09:15 AM EST</p>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-sm font-medium text-text-secondary mb-2">Property
+                                                    Manager Signature</h4>
+                                                <div
+                                                    class="border border-dashed border-border-light dark:border-border-dark rounded-lg p-4 bg-background-light/50 dark:bg-background-dark/50">
+                                                    <img alt="John Smith's signature" class="h-16 invert-if-dark"
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsibM-xXXn3ZjMA1DVQVLpY0WRCU3DEul0eWldNW0A2NVZoh5P-GKmGtXW6ziBJD-6YPKAKrNvE8Uk5bGQmxFBSD9ilv-KnOqgjCYcfyzASkslaAHIKrV9DPws6z2qKZx_nf1z1PXqopqIcxrUQbJhcfp2q9hNH4sxpEQRyMr7Qp_m21ZFhm-AXEtmvyEsXl49MnxxLWsYt4xTH970l7ueLM0sbQJWWP1WSs0gp18Yz5OdZRKzAI8h4-Nq4ABCKCevVsYvwc9sOmw"
+                                                        style="transform: scaleX(-1); filter: brightness(0) saturate(100%) invert(10%) sepia(13%) saturate(1209%) hue-rotate(177deg) brightness(92%) contrast(90%);" />
+                                                </div>
+                                                <p class="text-xs text-text-secondary mt-2">Signed by John Smith on
+                                                    October 26, 2023, 09:18 AM EST</p>
+                                            </div>
+                                        </div>
+                                        <p
+                                            class="text-sm text-text-secondary mt-6 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                                            By signing, both parties acknowledge that this report is an accurate
+                                            representation of the property's condition at the time of move-in.</p>
+                                    </div>
+                                    <!-- Footer -->
+
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

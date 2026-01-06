@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Notification Preferences</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="../../../js/utils.js" defer></script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <div class="w-64 border-r border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 flex-shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html"
+                        class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe
+                            </h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                Property 101, Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../amenities/aminitylist.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-1 flex-col">
+
+
+
+            <div class="relative flex h-auto min-h-screen w-full flex-col">
+                <div class="flex h-full grow flex-col">
+                    
+                    <main class="flex flex-1">
+                        <div class="flex-1 p-6 sm:p-8 md:p-10">
+                            <div class="mx-auto max-w-4xl">
+                                <div class="flex flex-col gap-3 mb-8">
+                                    <h1
+                                        class="text-3xl lg:text-4xl font-black leading-tight tracking-[-0.033em] text-text-primary-light dark:text-text-primary-dark">
+                                        Notification Preferences</h1>
+                                    <p
+                                        class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">
+                                        Manage how you receive communications from us.</p>
+                                </div>
+                                <div class="flex flex-col gap-8">
+                                    <div
+                                        class="rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-sm">
+                                        <div class="p-5 md:p-6 border-b border-border-light dark:border-border-dark">
+                                            <h2
+                                                class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-primary-light dark:text-text-primary-dark">
+                                                Notification Channels</h2>
+                                            <p
+                                                class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark mt-1">
+                                                Choose how you want to receive notifications. Disabling a channel here
+                                                will turn it off for all categories below.
+                                            </p>
+                                        </div>
+                                        <div class="p-5 md:p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                            <div class="flex items-center justify-between">
+                                                <label
+                                                    class="text-base font-medium text-text-primary-light dark:text-text-primary-dark"
+                                                    for="push-toggle">Push Notifications</label>
+                                                <button aria-checked="true"
+                                                    class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                    id="push-toggle" role="switch">
+                                                    <span
+                                                        class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                </button>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <label
+                                                    class="text-base font-medium text-text-primary-light dark:text-text-primary-dark"
+                                                    for="email-toggle">Email Notifications</label>
+                                                <button aria-checked="true"
+                                                    class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                    id="email-toggle" role="switch">
+                                                    <span
+                                                        class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                </button>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <label
+                                                    class="text-base font-medium text-text-primary-light dark:text-text-primary-dark"
+                                                    for="sms-toggle">SMS Notifications</label>
+                                                <button aria-checked="false"
+                                                    class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                    id="sms-toggle" role="switch">
+                                                    <span
+                                                        class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-sm">
+                                        <div class="p-5 md:p-6 border-b border-border-light dark:border-border-dark">
+                                            <h2
+                                                class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-primary-light dark:text-text-primary-dark">
+                                                Detailed Preferences</h2>
+                                            <p
+                                                class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark mt-1">
+                                                Manage notifications for specific categories. You will only receive
+                                                notifications on the channels you enabled above.
+                                            </p>
+                                        </div>
+                                        <div class="divide-y divide-border-light dark:divide-border-dark">
+                                            <div class="p-5 md:p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+                                                <div class="flex items-center gap-3 col-span-1 md:col-span-1">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl text-primary">receipt_long</span>
+                                                    <div class="flex flex-col">
+                                                        <h3
+                                                            class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                            Rent Reminders</h3>
+                                                        <p
+                                                            class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                            Upcoming and overdue rent.</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-span-1 md:col-span-3 grid grid-cols-3 gap-4 items-center pl-8 md:pl-0">
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Push notifications for Rent Reminders"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Email notifications for Rent Reminders"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable SMS notifications for Rent Reminders"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out opacity-40 cursor-not-allowed"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="p-5 md:p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+                                                <div class="flex items-center gap-3 col-span-1 md:col-span-1">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl text-primary">build</span>
+                                                    <div class="flex flex-col">
+                                                        <h3
+                                                            class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                            Maintenance Updates</h3>
+                                                        <p
+                                                            class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                            Service status and requests.</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-span-1 md:col-span-3 grid grid-cols-3 gap-4 items-center pl-8 md:pl-0">
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Push notifications for Maintenance Updates"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Email notifications for Maintenance Updates"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable SMS notifications for Maintenance Updates"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out opacity-40 cursor-not-allowed"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="p-5 md:p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+                                                <div class="flex items-center gap-3 col-span-1 md:col-span-1">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl text-primary">campaign</span>
+                                                    <div class="flex flex-col">
+                                                        <h3
+                                                            class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                            Announcements</h3>
+                                                        <p
+                                                            class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                            General building news.</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-span-1 md:col-span-3 grid grid-cols-3 gap-4 items-center pl-8 md:pl-0">
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Push notifications for Announcements"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Email notifications for Announcements"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable SMS notifications for Announcements"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out opacity-40 cursor-not-allowed"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="p-5 md:p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+                                                <div class="flex items-center gap-3 col-span-1 md:col-span-1">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl text-primary">celebration</span>
+                                                    <div class="flex flex-col">
+                                                        <h3
+                                                            class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                            Community Events</h3>
+                                                        <p
+                                                            class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                            Social gatherings and info.</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-span-1 md:col-span-3 grid grid-cols-3 gap-4 items-center pl-8 md:pl-0">
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Push notifications for Community Events"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable Email notifications for Community Events"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable SMS notifications for Community Events"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out opacity-40 cursor-not-allowed"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="p-5 md:p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+                                                <div class="flex items-center gap-3 col-span-1 md:col-span-1">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl text-primary">sell</span>
+                                                    <div class="flex flex-col">
+                                                        <h3
+                                                            class="text-base font-medium text-text-primary-light dark:text-text-primary-dark">
+                                                            Marketing</h3>
+                                                        <p
+                                                            class="text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                                                            Special offers and promotions.</p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-span-1 md:col-span-3 grid grid-cols-3 gap-4 items-center pl-8 md:pl-0">
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable Push notifications for Marketing"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                    <button aria-checked="true"
+                                                        aria-label="Enable Email notifications for Marketing"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+                                                    </button>
+                                                    <button aria-checked="false"
+                                                        aria-label="Enable SMS notifications for Marketing"
+                                                        class="relative ml-auto inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-600 transition-colors duration-200 ease-in-out opacity-40 cursor-not-allowed"
+                                                        role="switch">
+                                                        <span
+                                                            class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-0"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-5 md:p-6 flex justify-end items-center gap-4">
+                                            <span class="text-sm text-success flex items-center gap-2">
+                                                <span class="material-symbols-outlined text-lg">check_circle</span>
+                                                <span>Settings saved automatically</span>
+                                            </span>
+                                            <button
+                                                class="flex items-center justify-center rounded-lg h-10 bg-primary text-white gap-2 text-sm font-bold leading-normal min-w-0 px-5 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-card-dark">
+                                                Save Changes
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

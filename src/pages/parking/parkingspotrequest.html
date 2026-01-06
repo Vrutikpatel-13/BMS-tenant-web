@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request Parking Spot</title>
+<link href="../../../css/output.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../amenities/aminitylist.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="flex flex-1 flex-col">
+            <div class="relative flex min-h-screen w-full">
+                <!-- Main Content -->
+                <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
+                    <div class="w-full max-w-4xl">
+                        <!-- Breadcrumbs -->
+                        <!-- <div class="flex flex-wrap gap-2 mb-6">
+                            <a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="../dashboard/dashboard.html">Dashboard</a>
+                            <span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+                            <a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Parking</a>
+                            <span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+                            <span class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Request Parking</span>
+                        </div> -->
+                        
+                        <!-- Page Header -->
+                        <div class="mb-8">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div>
+                                    <h1 class="text-4xl font-bold text-text-primary-light dark:text-text-primary-dark leading-tight tracking-tight">Request Parking Spot</h1>
+                                    <p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal mt-2">Please fill out the details below to request a temporary parking spot.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Container -->
+                        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg">
+                            <form action="#" class="space-y-8" method="POST">
+                                <!-- Request Details Section -->
+                                <div class="space-y-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark mb-4">Request Details</h3>
+                                    </div>
+                                    
+                                    <fieldset>
+                                        <legend class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal pb-3">Request Type</legend>
+                                        <!-- RadioList -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <label class="flex cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 dark:border-gray-600 px-6 h-12 text-sm font-medium text-gray-600 dark:text-gray-400 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary transition-all">
+                                                Visitor
+                                                <input checked="" class="sr-only" name="request_type" type="radio" value="visitor"/>
+                                            </label>
+                                            <label class="flex cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 dark:border-gray-600 px-6 h-12 text-sm font-medium text-gray-600 dark:text-gray-400 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary transition-all">
+                                                Moving Truck
+                                                <input class="sr-only" name="request_type" type="radio" value="moving_truck"/>
+                                            </label>
+                                            <label class="flex cursor-pointer items-center justify-center rounded-lg border-2 border-gray-200 dark:border-gray-600 px-6 h-12 text-sm font-medium text-gray-600 dark:text-gray-400 has-[:checked]:border-primary has-[:checked]:bg-primary/10 has-[:checked]:text-primary transition-all">
+                                                Delivery
+                                                <input class="sr-only" name="request_type" type="radio" value="delivery"/>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    
+                                    <!-- TextField Group: Date & Duration -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">Date & Time Needed</p>
+                                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="Select a date and time" type="datetime-local" value=""/>
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">Duration</p>
+                                            <select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal">
+                                                <option>1 Hour</option>
+                                                <option>4 Hours</option>
+                                                <option>8 Hours</option>
+                                                <option>All Day (24 Hours)</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <hr class="border-gray-200 dark:border-gray-700"/>
+                                
+                                <!-- Vehicle Information Section -->
+                                <div class="space-y-6">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark mb-4">Vehicle Information</h3>
+                                    </div>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">Vehicle Make</p>
+                                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="e.g., Toyota" type="text" value=""/>
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">Vehicle Model</p>
+                                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="e.g., Camry" type="text" value=""/>
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">Vehicle Color</p>
+                                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="e.g., Blue" type="text" value=""/>
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal pb-2">License Plate</p>
+                                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-3 text-sm font-normal leading-normal" placeholder="e.g., ABC-123" type="text" value=""/>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Action Area -->
+                                <div class="flex justify-between items-center pt-6">
+                                    <a href="../dashboard/dashboard.html" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 text-sm font-medium transition-colors">
+                                        ← Back to Dashboard
+                                    </a>
+                                    <div class="flex gap-3">
+                                        <button type="button" class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-100 hover:bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                                            <span class="truncate">Cancel</span>
+                                        </button>
+                                        <a href="../parking/myparkingconfirmation.html" type="submit" class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
+                                            <span class="truncate">Submit Request</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body></html>

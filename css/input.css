@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  /* Button components */
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-primary/90 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 px-4 py-2 rounded-md font-medium hover:bg-gray-300 transition-colors dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600;
+  }
+  
+  .btn-outline {
+    @apply border border-border-light text-text-primary-light px-4 py-2 rounded-md font-medium hover:bg-gray-50 transition-colors dark:border-border-dark dark:text-text-primary-dark dark:hover:bg-gray-800;
+  }
+  
+  /* Card components */
+  .card {
+    @apply bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-border-light dark:border-border-dark;
+  }
+  
+  .card-header {
+    @apply px-6 py-4 border-b border-border-light dark:border-border-dark;
+  }
+  
+  .card-body {
+    @apply px-6 py-4;
+  }
+  
+  /* Form components */
+  .form-input {
+    @apply w-full px-3 py-2 border border-border-light rounded-md focus:ring-2 focus:ring-primary focus:border-primary dark:bg-slate-700 dark:border-border-dark dark:text-white;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-text-primary-light dark:text-text-primary-dark mb-1;
+  }
+  
+  /* Navigation components */
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-text-primary-light dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors;
+  }
+  
+  .nav-link-active {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary dark:text-primary;
+  }
+  
+  /* Status badges */
+  .badge-success {
+    @apply inline-flex items-center rounded-full bg-success/10 px-2 py-1 text-xs font-medium text-success;
+  }
+  
+  .badge-warning {
+    @apply inline-flex items-center rounded-full bg-warning/10 px-2 py-1 text-xs font-medium text-warning;
+  }
+  
+  .badge-error {
+    @apply inline-flex items-center rounded-full bg-error/10 px-2 py-1 text-xs font-medium text-error;
+  }
+  
+  .badge-secondary {
+    @apply inline-flex items-center rounded-full bg-secondary/10 px-2 py-1 text-xs font-medium text-secondary;
+  }
+}

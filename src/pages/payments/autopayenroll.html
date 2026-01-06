@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Auto-Pay Management</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+                    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+                        <div class="flex flex-1">
+
+                            <main class="flex-1 p-8">
+                                <div class="max-w-4xl mx-auto flex flex-col gap-8">
+                                    <header>
+                                        <div class="flex flex-wrap justify-between gap-3">
+                                            <div class="flex min-w-72 flex-col gap-2">
+                                                <h1
+                                                    class="text-text-primary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">
+                                                    Manage Auto-Pay</h1>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-base font-normal leading-normal">
+                                                    Enable to have your rent automatically deducted each month.</p>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div
+                                        class="flex flex-col gap-8 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+                                        <section class="@container">
+                                            <div
+                                                class="flex flex-1 flex-col items-start justify-between gap-4 @[480px]:flex-row @[480px]:items-center">
+                                                <div class="flex flex-col gap-1">
+                                                    <p
+                                                        class="text-text-primary dark:text-white text-base font-bold leading-tight">
+                                                        Automatic Payments</p>
+                                                    <p
+                                                        class="text-text-secondary dark:text-gray-400 text-base font-normal leading-normal">
+                                                        Enable to have your rent automatically deducted each month.</p>
+                                                </div>
+                                                <label
+                                                    class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-gray-600 p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary">
+                                                    <div class="h-full w-[27px] rounded-full bg-white transition-transform"
+                                                        style="box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px, rgba(0, 0, 0, 0.04) 0px 3px 1px;">
+                                                    </div>
+                                                    <input checked="" class="invisible absolute" type="checkbox" />
+                                                </label>
+                                            </div>
+                                        </section>
+                                        <hr class="border-gray-200 dark:border-gray-700" />
+                                        <section class="flex flex-col gap-4">
+                                            <div class="flex justify-between items-center">
+                                                <h2
+                                                    class="text-text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                                    Payment Method</h2>
+                                                <a href="../payments/addpaymentmethod.html"
+                                                    class="text-primary text-sm font-medium flex items-center gap-1 hover:underline">
+                                                    <span class="material-symbols-outlined text-base">add</span>
+                                                    Add New Payment Method
+                                                </a>
+                                            </div>
+                                            <fieldset class="flex flex-col gap-3">
+                                                <label
+                                                    class="flex items-center gap-4 rounded-lg border border-solid border-primary p-4 bg-primary/5 dark:bg-primary/10">
+                                                    <input checked=""
+                                                        class="h-5 w-5 border-2 border-gray-300 dark:border-gray-500 bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark dark:checked:bg-primary"
+                                                        name="payment_method" type="radio" />
+                                                    <div class="flex grow flex-col">
+                                                        <p
+                                                            class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                            Visa ending in 4242</p>
+                                                        <p
+                                                            class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                                            Expires 12/26</p>
+                                                    </div>
+                                                </label>
+                                                <label
+                                                    class="flex items-center gap-4 rounded-lg border border-solid border-gray-300 dark:border-gray-600 p-4 hover:border-gray-400 dark:hover:border-gray-500">
+                                                    <input
+                                                        class="h-5 w-5 border-2 border-gray-300 dark:border-gray-500 bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark dark:checked:bg-primary"
+                                                        name="payment_method" type="radio" />
+                                                    <div class="flex grow flex-col">
+                                                        <p
+                                                            class="text-text-primary dark:text-white text-sm font-medium leading-normal">
+                                                            Checking Account ending in 1234</p>
+                                                        <p
+                                                            class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                                            Bank of Montreal</p>
+                                                    </div>
+                                                </label>
+                                            </fieldset>
+                                        </section>
+                                        <section
+                                            class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                                            <div class="flex items-start gap-4">
+                                                <span class="material-symbols-outlined text-accent mt-1">info</span>
+                                                <div class="flex flex-col gap-1">
+                                                    <h3 class="text-text-primary dark:text-white font-semibold">Payment
+                                                        Summary</h3>
+                                                    <p class="text-text-secondary dark:text-gray-400 text-sm">Amount Due
+                                                        Monthly: <span
+                                                            class="font-medium text-text-primary dark:text-gray-300">$2,100.00
+                                                            CAD</span></p>
+                                                    <p class="text-text-secondary dark:text-gray-400 text-sm">Payment
+                                                        Date: <span
+                                                            class="font-medium text-text-primary dark:text-gray-300">1st
+                                                            of each month</span></p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="flex flex-col gap-4">
+                                            <h2
+                                                class="text-text-primary dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                                Terms &amp; Conditions</h2>
+                                            <div class="flex items-start space-x-3">
+                                                <input
+                                                    class="h-5 w-5 mt-0.5 rounded border-gray-300 text-primary focus:ring-primary dark:bg-gray-900 dark:border-gray-600"
+                                                    id="terms" type="checkbox" />
+                                                <div class="flex-1">
+                                                    <label class="text-sm font-medium text-text-primary dark:text-white"
+                                                        for="terms">I have read and agree to the <a
+                                                            class="text-primary underline hover:no-underline"
+                                                            href="#">Auto-Pay Terms &amp; Conditions.</a></label>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <footer
+                                            class="flex justify-end pt-4 border-t border-gray-200 dark:border-gray-700">
+                                            <button
+                                                class="w-full sm:w-auto bg-primary text-white font-medium py-2.5 px-6 rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark disabled:bg-gray-300 disabled:cursor-not-allowed dark:disabled:bg-gray-600">
+                                                Enroll in Auto-Pay
+                                            </button>
+                                        </footer>
+                                    </div>
+                                    <!-- Success Toast Notification -->
+                                    <div
+                                        class="fixed bottom-5 right-5 flex items-center gap-4 bg-success text-white p-4 rounded-lg shadow-lg">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <div>
+                                            <p class="font-bold">Success! You've enrolled in Auto-Pay.</p>
+                                            <p class="text-sm">Your first automatic payment of $2,100.00 is scheduled
+                                                for July 1, 2024.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

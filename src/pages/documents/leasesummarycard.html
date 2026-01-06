@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lease Summary</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="font-display">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+
+
+                    <div
+                        class="relative flex min-h-screen w-full flex-col bg-background-light group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+                            <div class="flex flex-1 justify-center p-4 sm:p-6 md:p-10">
+                                <div class="layout-content-container flex w-full max-w-[960px] flex-1 flex-col gap-8">
+                                    <div class="flex flex-wrap items-end justify-between gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <p
+                                                class="text-text-primary text-4xl font-black leading-tight tracking-[-0.033em]">
+                                                123 Maple Street, Unit 4B</p>
+                                            <p class="text-text-secondary text-base font-normal leading-normal">Your
+                                                Lease Summary</p>
+                                        </div>
+                                        <div
+                                            class="flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-sm font-medium text-success">
+                                            <div class="size-2 rounded-full bg-success"></div>
+                                            <span>Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col rounded-xl bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+                                        <div class="p-6 md:p-8">
+                                            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">calendar_month</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Move-in Date</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            August 1, 2024</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">event_busy</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Lease End Date</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            July 31, 2025</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">attach_money</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Monthly Rent</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            $2,100 CAD</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">shield</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Security Deposit</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            $1,050 CAD</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">water_drop</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Included Utilities</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            Water, Hydro</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">pets</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Pet Policy</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            Pets Allowed</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-start gap-4">
+                                                    <div
+                                                        class="text-secondary flex size-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10">
+                                                        <span class="material-symbols-outlined">local_parking</span>
+                                                    </div>
+                                                    <div class="flex flex-col justify-center">
+                                                        <p
+                                                            class="text-text-secondary text-sm font-normal leading-normal line-clamp-2">
+                                                            Parking Space</p>
+                                                        <p
+                                                            class="text-text-primary text-base font-medium leading-normal line-clamp-1">
+                                                            Spot #12B</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-t border-gray-200 bg-gray-50/50 p-6">
+                                            <div class="flex justify-end">
+                                                <a href="../documents/unitrules&regulations.html"
+                                                    class="flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-base font-semibold text-white transition-colors hover:bg-primary/90">
+                                                    <span>View Full Lease Agreement</span>
+                                                    <span class="material-symbols-outlined text-xl">arrow_forward</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

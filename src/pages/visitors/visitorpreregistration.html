@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Visitor Pre-registration</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-200">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html"
+                        class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe
+                            </h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                Property 101, Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../amenities/aminitylist.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="flex flex-1 flex-col">
+            <div class="relative flex min-h-screen w-full">
+                <!-- Main Content -->
+                <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
+                    <div class="w-full max-w-4xl">
+                        <!-- Page Header -->
+                        <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+                            <div class="flex min-w-72 flex-col gap-2">
+                                <div class="flex items-center gap-3">
+                                    
+                                    <div>
+                                        <h1
+                                            class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-primary-light dark:text-text-primary-dark">
+                                            Visitor Pre-registration</h1>
+                                        <p
+                                            class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark mt-1">
+                                            Please fill out the form below to register your visitor.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Form Container -->
+                        <div
+                            class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm p-8 border border-gray-200 dark:border-gray-700">
+                            <form class="space-y-8">
+                                <!-- Guest Information Section -->
+                                <div>
+                                    <h2
+                                        class="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark border-b border-gray-200 dark:border-gray-700 pb-3 mb-6">
+                                        Guest Information</h2>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <label class="flex flex-col col-span-2">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Guest's Full Name</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm"
+                                                placeholder="Enter guest's full name" value="" />
+                                        </label>
+                                        <label class="flex flex-col flex-1">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Expected Date &amp; Time</p>
+                                            <div class="flex w-full flex-1 items-stretch rounded-lg">
+                                                <input
+                                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 rounded-r-none border-r-0 pr-2 text-sm"
+                                                    placeholder="Select date and time" value="" />
+                                                <div
+                                                    class="text-text-secondary-light dark:text-text-secondary-dark flex border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 items-center justify-center px-3 rounded-r-lg border-l-0">
+                                                    <span
+                                                        class="material-symbols-outlined text-xl">calendar_month</span>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="flex flex-col col-span-2">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Purpose of Visit</p>
+                                            <textarea
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary min-h-28 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark p-3 text-sm"
+                                                placeholder="e.g., Social visit, delivery, service/repair"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Vehicle Information Section -->
+                                <div>
+                                    <h2
+                                        class="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark border-b border-gray-200 dark:border-gray-700 pb-3 mb-6">
+                                        Vehicle Information (Optional)</h2>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <label class="flex flex-col">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Vehicle Make</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm"
+                                                placeholder="e.g., Toyota" value="" />
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Vehicle Model</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm"
+                                                placeholder="e.g., Camry" value="" />
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                Vehicle Color</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm"
+                                                placeholder="e.g., Blue" value="" />
+                                        </label>
+                                        <label class="flex flex-col">
+                                            <p
+                                                class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium pb-2">
+                                                License Plate Number</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-11 placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm"
+                                                placeholder="e.g., ABC-123" value="" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Actions -->
+                                <div class="flex justify-between items-center pt-6 border-t border-gray-200 dark:border-gray-700">
+                                   
+                                    <div class="flex gap-3 justify-end w-full">
+                                        <a href="../visitors/digitalguestpass.html"
+                                            class="flex items-center justify-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-medium transition-colors">
+                                            view pass
+                                        </a>
+                                        <a href="../amenities/aminitybookingform.html"
+                                            class="flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors">
+                                            
+                                            Register Visitor
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

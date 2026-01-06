@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Documents Library - PropertEase</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-100">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+                    <div class="relative flex h-auto min-h-screen w-full flex-col">
+                        
+                        <div class="flex flex-1">
+                            
+                            <main class="flex-1 p-8">
+                                <div class="flex flex-col gap-6">
+                                    <div class="flex flex-wrap justify-between gap-3 items-center">
+                                        <div>
+                                            <p
+                                                class="text-text-primary dark:text-white text-3xl font-black leading-tight tracking-[-0.033em]">
+                                                Documents Library</p>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <a class="text-text-secondary dark:text-gray-400 text-sm font-medium leading-normal"
+                                                    href="#">Home</a>
+                                                <span
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-medium leading-normal">/</span>
+                                                <span
+                                                    class="text-text-primary dark:text-white text-sm font-medium leading-normal">Documents</span>
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center gap-2 px-4 h-10 rounded-lg bg-primary text-white text-sm font-bold hover:bg-primary/90">
+                                            <span class="material-symbols-outlined text-base">upload_file</span>
+                                            <span>Upload Document</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="mt-8">
+                                        <div
+                                            class="rounded-2xl border border-gray-200 overflow-hidden">
+                                            <!-- Tab Buttons in a Long Card -->
+                                            <div
+                                                class="flex flex-wrap gap-2 p-4">
+                                                <a href="../documents/leasesummarycard.html"
+                                                    class="tablinks px-8 py-3 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-semibold text-md rounded-xl shadow-md ">
+                                                    Lease Documents
+                                                </a>
+                                    
+                                                <a href="../lease/moveininspectionreport.html"
+                                                    class="tablinks capitalize px-8 py-3 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-semibold text-md rounded-xl shadow-md ">
+                                                    move in Inspection Documents
+                                                </a>
+                                    
+                                                <a href="../lease/moveoutinspection.html"
+                                                    class="tablinks capitalize px-8 py-3 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-semibold text-md rounded-xl shadow-md ">
+                                                    move out Inspection Documents
+                                                </a>
+                                    
+                                                <a href="../lease/moveoutnoticesubmission.html"
+                                                    class="tablinks capitalize px-8 py-3 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 font-semibold text-md rounded-xl shadow-md ">
+                                                    Legal & Notices
+                                                </a>
+                                            </div>
+                                    
+                                    
+                                        </div>
+                                    </div>
+
+                                    <div class="px-0 py-3">
+                                        <label class="flex flex-col min-w-40 h-12 w-full">
+                                            <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                                                <div
+                                                    class="text-text-secondary dark:text-gray-400 flex border border-border-light dark:border-border-dark bg-white dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                                    <span class="material-symbols-outlined">search</span>
+                                                </div>
+                                                <input
+                                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-primary dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-gray-800 focus:border-primary/50 h-full placeholder:text-text-secondary dark:placeholder:text-gray-500 px-4 border-l-0 pl-2 text-base font-normal leading-normal"
+                                                    placeholder="Search documents..." value="" />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="overflow-x-auto bg-white dark:bg-gray-800 rounded-xl border border-border-light dark:border-border-dark">
+                                        <table class="w-full text-left">
+                                            <thead class="border-b border-border-light dark:border-border-dark">
+                                                <tr>
+                                                    <th
+                                                        class="p-4 text-sm font-semibold text-text-secondary dark:text-gray-400">
+                                                        Name</th>
+                                                    <th
+                                                        class="p-4 text-sm font-semibold text-text-secondary dark:text-gray-400">
+                                                        Date Added</th>
+                                                    <th
+                                                        class="p-4 text-sm font-semibold text-text-secondary dark:text-gray-400">
+                                                        Size</th>
+                                                    <th
+                                                        class="p-4 text-sm font-semibold text-text-secondary dark:text-gray-400">
+                                                        Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr
+                                                    class="border-b border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                                                    <td class="p-4">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="material-symbols-outlined text-error">picture_as_pdf</span>
+                                                            <span
+                                                                class="text-text-primary dark:text-white font-medium">Lease
+                                                                Agreement - Unit 402</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">Jan 15, 2024
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">2.4 MB</td>
+                                                    <td class="p-4">
+                                                        <div class="flex gap-2">
+                                                            <a href="../documents/leaseagreement.html"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90">View</a>
+                                                            <a href="#"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-background-light dark:bg-gray-700 text-text-secondary dark:text-gray-300 border border-border-light dark:border-border-dark hover:bg-gray-200 dark:hover:bg-gray-600 text-xs font-bold">Download</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    class="border-b border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                                                    <td class="p-4">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="material-symbols-outlined text-primary">description</span>
+                                                            <span
+                                                                class="text-text-primary dark:text-white font-medium">Move-in
+                                                                Inspection Report</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">Jan 16, 2024
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">1.1 MB</td>
+                                                    <td class="p-4">
+                                                        <div class="flex gap-2">
+                                                            <a href="../documents/leaseagreement.html"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90">View</a>
+                                                            <a href="#"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-background-light dark:bg-gray-700 text-text-secondary dark:text-gray-300 border border-border-light dark:border-border-dark hover:bg-gray-200 dark:hover:bg-gray-600 text-xs font-bold">Download</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    class="border-b border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                                                    <td class="p-4">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="material-symbols-outlined text-success">image</span>
+                                                            <span
+                                                                class="text-text-primary dark:text-white font-medium">February
+                                                                Rent Receipt</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">Feb 01, 2024
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">850 KB</td>
+                                                    <td class="p-4">
+                                                        <div class="flex gap-2">
+                                                            <a href="../documents/leaseagreement.html"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90">View</a>
+                                                            <a href="#"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-background-light dark:bg-gray-700 text-text-secondary dark:text-gray-300 border border-border-light dark:border-border-dark hover:bg-gray-200 dark:hover:bg-gray-600 text-xs font-bold">Download</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr
+                                                    class="border-b border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                                                    <td class="p-4">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="material-symbols-outlined text-error">picture_as_pdf</span>
+                                                            <span
+                                                                class="text-text-primary dark:text-white font-medium">Tenant
+                                                                Insurance Policy</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">Feb 05, 2024
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">3.5 MB</td>
+                                                    <td class="p-4">
+                                                        <div class="flex gap-2">
+                                                            <a href="../documents/leaseagreement.html"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90">View</a>
+                                                            <a href="#"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-background-light dark:bg-gray-700 text-text-secondary dark:text-gray-300 border border-border-light dark:border-border-dark hover:bg-gray-200 dark:hover:bg-gray-600 text-xs font-bold">Download</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-4">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="material-symbols-outlined text-warning">notification_important</span>
+                                                            <span
+                                                                class="text-text-primary dark:text-white font-medium">Notice
+                                                                of Entry - Maintenance</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">Feb 10, 2024
+                                                    </td>
+                                                    <td class="p-4 text-text-secondary dark:text-gray-400">50 KB</td>
+                                                    <td class="p-4">
+                                                        <div class="flex gap-2">
+                                                            <a href="../documents/leaseagreement.html"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-primary text-white text-xs font-bold hover:bg-primary/90">View</a>
+                                                            <a href="#"
+                                                                class="flex items-center justify-center h-8 px-3 rounded-lg bg-background-light dark:bg-gray-700 text-text-secondary dark:text-gray-300 border border-border-light dark:border-border-dark hover:bg-gray-200 dark:hover:bg-gray-600 text-xs font-bold">Download</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- Empty State Example
+            <div class="flex flex-col items-center justify-center p-16 text-center">
+              <span class="material-symbols-outlined text-6xl text-gray-300 dark:text-gray-600">folder_off</span>
+              <p class="mt-4 text-lg font-semibold text-text-primary dark:text-white">No documents found</p>
+              <p class="mt-1 text-sm text-text-secondary dark:text-gray-400">There are no documents in this folder yet.</p>
+            </div>
+            -->
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

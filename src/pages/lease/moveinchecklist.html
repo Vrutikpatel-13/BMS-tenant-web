@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Move-In Checklist</title>
+<link href="../../../css/output.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex flex-row min-h-screen">
+    <!-- Side Navigation Bar Component -->
+<div class="w-64 border-r border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 flex-shrink-0">
+    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+        <div class="flex flex-col gap-4">
+            <!-- User Profile Section -->
+            <div class="flex gap-3 items-center">
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    data-alt="User profile picture"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-col gap-2">
+                <a class="nav-link" href="../dashboard/dashboard.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                </a>
+                <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined">apartment</span>
+                    <p class="text-sm font-medium leading-normal">Properties</p>
+                </a>
+                <a class="nav-link" href="../payments/payment.html">
+                    <span class="material-symbols-outlined">payments</span>
+                    <p class="text-sm font-medium leading-normal">Payments</p>
+                </a>
+                <a class="nav-link" href="../settings/securitysettings.html">
+                    <span class="material-symbols-outlined">settings</span>
+                    <p class="text-sm font-medium leading-normal">Settings</p>
+                </a>
+                <a class="nav-link" href="../communications/notificationpreference.html">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <p class="text-sm font-medium leading-normal">Notification</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col gap-2">
+            <a class="nav-link" href="../auth/login.html">
+                <span class="material-symbols-outlined">logout</span>
+                <p class="text-sm font-medium leading-normal">Logout</p>
+            </a>
+            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                <span class="material-symbols-outlined">delete</span>
+                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div class="flex flex-1 flex-col">
+        
+<div class="flex flex-row min-h-screen">
+    <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+<div class="flex flex-col grow p-4">
+<div class="flex items-center gap-3 mb-8">
+<div class="bg-primary rounded-full size-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 24px;">apartment</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-text-primary text-base font-bold leading-normal">John Tenant</h1>
+<p class="text-text-secondary text-sm font-normal leading-normal">Apt 402</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../dashboard/dashboard.html">
+<span class="material-symbols-outlined text-text-secondary">dashboard</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../settings/tenantpersonalinfo.html">
+<span class="material-symbols-outlined text-text-secondary">person</span>
+<p class="text-text-primary text-sm font-medium leading-normal">My Profile</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../documents/documentslibrary.html">
+<span class="material-symbols-outlined text-text-secondary">description</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Documents</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">history</span>
+<p class="text-primary text-sm font-medium leading-normal">Request History</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../maintenance/quickrequestsubmission.html">
+<span class="material-symbols-outlined text-text-secondary">add_comment</span>
+<p class="text-text-primary text-sm font-medium leading-normal">New Request</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4 p-4 border-t border-border-light">
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../settings/securitysettings.html">
+<span class="material-symbols-outlined text-text-secondary">settings</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Settings</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-text-secondary">help</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Help</p>
+</a>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-100 hover:bg-gray-200 text-text-primary text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Logout</span>
+</button>
+</div>
+</aside>
+    <div class="flex flex-1 flex-col">
+        
+
+
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="w-64 flex-shrink-0 bg-white dark:bg-background-dark dark:border-r dark:border-border-dark shadow-sm">
+<div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 items-center p-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="John Doe's profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDuP4krUa6b_ffBv4wDKYQu0ZAycSjavq0lN7p_-I3CAtW1vPPSs4Et08j1BGRYBefoGQuPjTVrXm5MaIz8Fp5ojY0gGR7gbn_PamkE9_1N9BnTn-Sr4olzpOHOSLVklJRSLH40I-S6k-WmtCC6lexAQBbY2gIk1fPFrgJ_yR8nIOLW-OYMCYvPpMw2RhPK6IPcfv59-QQ5Ls4Lkw0UNcIDnUrh8v0yM4VTIjigSo7dwdD4RxtvzbAHkre59lKn1xeJMfu37BAfYm0");'></div>
+<div class="flex flex-col">
+<h1 class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">John Doe</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Unit 402</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">dashboard</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-primary/20" href="#">
+<span class="material-symbols-outlined fill text-primary">apartment</span>
+<p class="text-primary text-sm font-medium leading-normal">My Unit</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">credit_card</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Payments</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">build</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Maintenance</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">description</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Documents</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">settings</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Settings</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">help_outline</span>
+<p class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Need Help?</p>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex flex-1" class="flex-1 p-6 lg:p-10">
+<div class="max-w-4xl mx-auto">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-4 items-center mb-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-text-primary-light dark:text-text-primary-dark text-4xl font-black leading-tight tracking-[-0.033em]">My Move-In Checklist</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">
+                            Welcome, John! Let's get you settled in. Please complete the following steps for a smooth move-in.
+                        </p>
+</div>
+</div>
+<!-- ProgressBar -->
+<div class="flex flex-col gap-3 p-6 bg-white dark:bg-gray-800 rounded-xl border border-border-light dark:border-border-dark shadow-sm mb-8">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">Your Progress</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">33%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2">
+<div class="h-2 rounded-full bg-primary" style="width: 33%;"></div>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">You've completed 2 of 6 tasks.</p>
+</div>
+<!-- Task List Container -->
+<div class="flex flex-col gap-4">
+<!-- SectionHeader -->
+<h2 class="text-text-primary-light dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 pb-2 pt-4">Required Tasks</h2>
+<!-- Task Item 1: Completed -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex size-8 items-center justify-center">
+<input checked="" class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" disabled="" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal line-through">Complete Move-In Inspection</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Completed on Oct 26, 2023</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 rounded-full bg-success/10 px-3 py-1">
+<div class="size-2 rounded-full bg-success"></div>
+<p class="text-success text-sm font-medium">Completed</p>
+</div>
+</div>
+</div>
+<!-- Task Item 2: Completed -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4">
+<div class="flex size-8 items-center justify-center">
+<input checked="" class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" disabled="" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal line-through">Set Up Utilities</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Completed on Oct 25, 2023</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 rounded-full bg-success/10 px-3 py-1">
+<div class="size-2 rounded-full bg-success"></div>
+<p class="text-success text-sm font-medium">Completed</p>
+</div>
+</div>
+</div>
+<!-- Task Item 3: Awaiting Approval -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4 flex-grow">
+<div class="flex size-8 items-center justify-center">
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">Upload Proof of Tenant Insurance</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Your document has been submitted and is pending review.</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4">
+<button class="px-4 py-2 text-sm font-medium text-text-primary-light dark:text-text-primary-dark bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-lg">View Document</button>
+<div class="flex items-center gap-2 rounded-full bg-warning/10 px-3 py-1">
+<div class="size-2 rounded-full bg-warning"></div>
+<p class="text-warning text-sm font-medium">Awaiting Approval</p>
+</div>
+</div>
+</div>
+<!-- Task Item 4: Pending -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4 flex-grow">
+<div class="flex size-8 items-center justify-center">
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">Register Your Vehicle</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Add your vehicle details for parking registration.</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4">
+<button class="px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg">Register</button>
+<div class="flex items-center gap-2 rounded-full bg-gray-400/10 dark:bg-gray-500/20 px-3 py-1">
+<div class="size-2 rounded-full bg-gray-400 dark:bg-gray-500"></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium">Pending</p>
+</div>
+</div>
+</div>
+<!-- Task Item 5: Pending -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4 flex-grow">
+<div class="flex size-8 items-center justify-center">
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">Register Your Pet(s)</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Provide details about any pets that will be living in the unit.</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4">
+<button class="px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg">Register</button>
+<div class="flex items-center gap-2 rounded-full bg-gray-400/10 dark:bg-gray-500/20 px-3 py-1">
+<div class="size-2 rounded-full bg-gray-400 dark:bg-gray-500"></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium">Pending</p>
+</div>
+</div>
+</div>
+<!-- Task Item 6: Pending -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 min-h-[80px] justify-between rounded-xl border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center gap-4 flex-grow">
+<div class="flex size-8 items-center justify-center">
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-0 dark:focus:ring-offset-gray-800" type="checkbox"/>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-medium leading-normal">Review &amp; Acknowledge Building Rules</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Read and confirm you understand the community guidelines.</p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-4">
+<button class="px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg">View &amp; Acknowledge</button>
+<div class="flex items-center gap-2 rounded-full bg-gray-400/10 dark:bg-gray-500/20 px-3 py-1">
+<div class="size-2 rounded-full bg-gray-400 dark:bg-gray-500"></div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium">Pending</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+</body></html>

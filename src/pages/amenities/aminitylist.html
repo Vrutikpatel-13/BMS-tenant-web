@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Book an Amenity - Building Management System</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+    <div class="flex flex-row min-h-screen">
+        <div class="flex flex-1 flex-col">
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+                    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+                            <main class="px-6 md:px-10 lg:px-20 flex flex-1 justify-center py-8">
+                                <div class="layout-content-container flex flex-col w-full max-w-7xl flex-1">
+                                    <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                                        <div class="flex min-w-72 flex-col gap-2">
+                                            <p class="text-4xl font-black leading-tight tracking-[-0.033em]">Book an
+                                                Amenity</p>
+                                            <p
+                                                class="text-base font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">
+                                                Browse and book from the list of available facilities in your building.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                                        <div class="flex-grow">
+                                            <label class="flex flex-col min-w-40 h-12 w-full">
+                                                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                                                    <div
+                                                        class="text-text-secondary-light dark:text-text-secondary-dark flex bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 items-center justify-center pl-4 rounded-l-lg border-r-0">
+                                                        <span class="material-symbols-outlined text-2xl">search</span>
+                                                    </div>
+                                                    <input
+                                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary-light dark:text-text-primary-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 h-full placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                                        placeholder="Search for an amenity (e.g., Pool)" value="" />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="flex gap-4">
+                                            <div class="relative w-full md:w-48">
+                                                <select
+                                                    class="w-full h-12 px-4 pr-10 text-base font-medium leading-normal text-text-primary-light dark:text-text-primary-dark bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50">
+                                                    <option>Show All</option>
+                                                    <option>Available</option>
+                                                    <option>Booked</option>
+                                                    <option>Under Maintenance</option>
+                                                </select>
+                                                <div
+                                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-text-secondary-light dark:text-text-secondary-dark">
+                                                    <span class="material-symbols-outlined">expand_more</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 p-1 mb-8 overflow-x-auto">
+                                        <a href=""
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary font-bold px-5 text-sm">All</a>
+                                        <a href=""
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-gray-800 px-5 text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-200 dark:hover:bg-gray-700">Recreation</a>
+                                        <a href=""
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-gray-800 px-5 text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-200 dark:hover:bg-gray-700">Parking</a>
+                                        <a href=""
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 dark:bg-gray-800 px-5 text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-200 dark:hover:bg-gray-700">Social</a>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Modern fitness center with various exercise machines"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpHHdx7em9AJCt2ITv_GsXGjPD--NG4DYNFuZN_kEyXGyYn4AX9XtUlCX9dDCAQv6fhtXrSwTIn0CRXojJi0ss9GJSafNSe9_HOdjgMQCHQers35vEdeX7yvT2la7SJgIVoSIt0UQLASsN8kdTSqp_yU7p-mofQa8ZmWDmb2m99GuQoYVrW7tKhGdUlWb4ROqLUJ7GX66Dws0DIWOL51kPw-XErwWkpUUyAihPy2oIaMiFjyi5QVama-6qWem96TCXtjxhdGksnEs');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-success/20 text-success text-xs font-bold">
+                                                    Available</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Gym &amp; Fitness Center</h3>
+                                                <p
+                                                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    Fully equipped with modern cardio and strength training machines.
+                                                </p>
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="aminitybookingcalender.html"
+                                                        class="w-full text-center rounded-lg bg-primary text-white text-sm font-bold h-10 flex items-center justify-center hover:bg-blue-700 transition-colors">Book
+                                                        Amenity</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Outdoor swimming pool with lounge chairs"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUernniD3gZHw8dsgVuOAAVmP1wYOqGhX-BgzB_853iEqaqsqy0A3hOq-nxDMbCtweMzB9Gk2duGY-BH8tDPlKvLabYUuAobwTHOua4lHA306dW3ECdMzHHGrU-F2C5_OMhzc985iLQEjnG3cekHeyBIvnSFlbstuKKJ42IhAzJmwDVgeIRiHoUeo3yO7qw0A06tJ89oy3fFjGiZZUnYNDPE12SRb4tKTgYYexOT7sUVCWN9RqxLaH_eFFNhBCIu5naJuxNQPlqoY');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-error/20 text-error text-xs font-bold">
+                                                    Booked</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Swimming Pool</h3>
+                                                <p
+                                                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    Heated outdoor pool, perfect for relaxation and exercise.</p>
+                                                <a href="aminitybookingcalender.html"
+                                                    class="w-full text-center flex justify-center items-center rounded-lg bg-gray-300 dark:bg-gray-600 text-text-secondary-light dark:text-text-secondary-dark text-sm font-bold h-10 cursor-not-allowed">View
+                                                    Calendar</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Spacious party room with tables and chairs set up"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJpgEmy7wqbZEniobyGdCNVMXRI2Tnt47hULu37WXpPDvLxvNn8Yn5nUiBZOFOOH8AYuAsvufyqi8FoyXIMU8CF4sF1CNCjirhFKqyXeHxZ-3LUkOBn0BX28qYYFozKzNXcdfDqsF6iJlPZffk-7lRdcmXbjlo1D_IwQpXFb0f6aTO5tNVVjgyV9r4o6n8UpH9TmqtyDP8mGNXXcgiJvGb2pRXZNhoN_QR9hMqhy0lG9cpPcg786TcbZWHBM3MzQna-GFkiqd-9-k');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-success/20 text-success text-xs font-bold">
+                                                    Available</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Party Room</h3>
+                                                <p
+                                                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    An ideal space for hosting private events and gatherings.</p>
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="aminitybookingcalender.html"
+                                                        class="w-full text-center rounded-lg bg-primary text-white text-sm font-bold h-10 flex items-center justify-center hover:bg-blue-700 transition-colors">Book
+                                                        Amenity</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Rooftop area with BBQ grills and city view"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGQXP0_TiTIzBQ1nsaOp-d3OWAVBGwMx16BykAe2k41PfIz7jvcNE5GU8k8eG3TiAYE52o7Oq-cJIV18CTdZRhCUOVqysgeWmhdAh-VGvR9EyCymZfkv0EjZYQgK1vgTZ6Rzk7_GKgw8gz2iil5Lv_-EEVDdPL6MiDqy94iG6mlFcY4WsWLCs43tTJLtunLhT_nK7AbV2JE_9V8WtZXMP2Wj9boR1EI7Bquj9XKUW48WGHlNZr1goAazt16Vrg87dvuQ7HBKSfCZg');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-warning/20 text-warning text-xs font-bold">
+                                                    Maintenance</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Rooftop BBQ Area</h3>
+                                                <p
+                                                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    Enjoy stunning city views while grilling with friends and family.
+                                                </p>
+                                                <a href="aminitybookingcalender.html"
+                                                    class="w-full flex justify-center items-center text-center rounded-lg bg-gray-300 dark:bg-gray-600 text-text-secondary-light dark:text-text-secondary-dark text-sm font-bold h-10 cursor-not-allowed">View
+                                                    Calendar</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Underground parking garage with designated guest spots"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbi5eoDuwF5aflJ8n43739zfvOxI0gMxbCcJ4TiIOvHua4pTH7oSLmscUpA-spJ76s02Y55w01RMNUGzY0zIXmK8HuXfwD7Er1SLbwD_8yp_tWLVMw3yckg5gz3SpZnv8sNEK5JPVfiQEkKAW16Ov0e6lKlBppmvxtobRbjesFbuHNICLrUEaunJnxAMsTP8Ojyr430ZJ6fWaUBmixaeNgubznUhe5Y8TAKOXpx2zk3DkXJhKIM0MgUp-KSrXa9YkPgijUfw6ty4Y');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-success/20 text-success text-xs font-bold">
+                                                    Available</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Guest Parking</h3>
+                                                <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    Secure and convenient parking for your visitors.</p>
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="../parking/parkingspotrequest.html"
+                                                        class="w-full text-center rounded-lg bg-primary text-white text-sm font-bold h-10 flex items-center justify-center hover:bg-blue-700 transition-colors">Book
+                                                        Parking</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
+                                            <div class="relative h-48 w-full overflow-hidden">
+                                                <div class="absolute inset-0 bg-center bg-cover transition-transform duration-300 group-hover:scale-105"
+                                                    data-alt="Cozy movie theatre with comfortable seats"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPE5QFXaJ4r0PvXziVfeus36GVOuWG1xJnIzztVbmtr46r8ZHgr7ifJkGQm4cOWPXZMx2asEcKr09stXBXSHM5zLPVbHqhwRSyk5jU4p8j6G6Azq_xktJEBQ7saKrn9L9_rGfkucfWjRFK1PeQJtuQYAcJ1X-4HTWorPvxphIP1GXmA-5awcQ5dE81J1dBGDOh8RrD-yXMobdXO9g0DtJoYJvpYkaMIDy1IzKyHl8Bt_WXyyTkMM61rzSN_wYlMkaIAHG3OSzfU-Q');">
+                                                </div>
+                                                <div
+                                                    class="absolute top-3 right-3 flex items-center justify-center h-7 px-3 rounded-full bg-error/20 text-error text-xs font-bold">
+                                                    Booked</div>
+                                            </div>
+                                            <div class="p-5 flex flex-col flex-grow">
+                                                <h3
+                                                    class="text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-2">
+                                                    Movie Theatre</h3>
+                                                <p
+                                                    class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-4 flex-grow">
+                                                    Private cinema experience with state-of-the-art sound system.</p>
+                                                <a href="aminitybookingcalender.html"
+                                                    class="w-full text-center  flex justify-center items-center rounded-lg bg-gray-300 dark:bg-gray-600 text-text-secondary-light dark:text-text-secondary-dark text-sm font-bold h-10 cursor-not-allowed">View
+                                                    Calendar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

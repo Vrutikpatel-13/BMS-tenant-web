@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Security Deposit - PropertEase</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body class="font-display">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html"
+                                class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">
+                                        John Doe</h1>
+                                    <p
+                                        class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                        Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+
+
+                    <div
+                        class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+
+                            <main class="px-4 sm:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+                                <div class="layout-content-container flex flex-col w-full max-w-5xl flex-1">
+                                    <div class="flex flex-wrap justify-between gap-4 items-center mb-8">
+                                        <p
+                                            class="text-text-primary dark:text-text-primary-dark text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">
+                                            Your Security Deposit</p>
+                                        <a href="../payments/paymentreceipt.html"
+                                            class="flex items-center gap-2 min-w-[84px] max-w-[480px] cursor-pointer justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                            <span class="material-symbols-outlined text-base">picture_as_pdf</span>
+                                            <span class="truncate">View Final Statement</span>
+                                        </a>
+                                    </div>
+                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                        <div
+                                            class="lg:col-span-3 bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+                                            <div class="flex flex-col md:flex-row items-start justify-between gap-6">
+                                                <div class="flex flex-col gap-1.5">
+                                                    <p
+                                                        class="text-text-secondary dark:text-text-secondary-dark text-base font-medium leading-normal">
+                                                        Total Deposit Amount</p>
+                                                    <p
+                                                        class="text-text-primary dark:text-text-primary-dark text-4xl font-bold leading-tight tracking-[-0.03em]">
+                                                        $2,500.00</p>
+                                                </div>
+                                                <div class="flex flex-col gap-1.5">
+                                                    <p
+                                                        class="text-text-secondary dark:text-text-secondary-dark text-base font-medium leading-normal">
+                                                        Refund Status</p>
+                                                    <div class="flex items-center">
+                                                        <span
+                                                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-warning/20 text-yellow-800 dark:text-yellow-400">Pending</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="lg:col-span-3 bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+                                            <h2
+                                                class="text-text-primary dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] mb-6">
+                                                Refund Timeline</h2>
+                                            <div class="relative w-full">
+                                                <div
+                                                    class="absolute top-1/2 -translate-y-1/2 w-full h-0.5 bg-border-light dark:bg-border-dark">
+                                                </div>
+                                                <div class="absolute top-1/2 -translate-y-1/2 w-1/3 h-0.5 bg-primary">
+                                                </div>
+                                                <div class="relative flex justify-between items-start">
+                                                    <div class="flex flex-col items-center gap-2 text-center">
+                                                        <div
+                                                            class="size-4 rounded-full bg-primary ring-4 ring-primary/20 flex items-center justify-center">
+                                                        </div>
+                                                        <p
+                                                            class="text-sm font-semibold text-text-primary dark:text-text-primary-dark">
+                                                            Lease End</p>
+                                                        <p
+                                                            class="text-xs text-text-secondary dark:text-text-secondary-dark">
+                                                            Sep 30, 2024</p>
+                                                    </div>
+                                                    <div class="flex flex-col items-center gap-2 text-center">
+                                                        <div
+                                                            class="size-4 rounded-full bg-primary ring-4 ring-primary/20 flex items-center justify-center">
+                                                        </div>
+                                                        <p
+                                                            class="text-sm font-semibold text-text-primary dark:text-text-primary-dark">
+                                                            Inspection</p>
+                                                        <p
+                                                            class="text-xs text-text-secondary dark:text-text-secondary-dark">
+                                                            Oct 1, 2024</p>
+                                                    </div>
+                                                    <div class="flex flex-col items-center gap-2 text-center">
+                                                        <div
+                                                            class="size-4 rounded-full bg-border-light dark:bg-border-dark ring-4 ring-transparent flex items-center justify-center">
+                                                        </div>
+                                                        <p
+                                                            class="text-sm font-semibold text-text-secondary dark:text-text-secondary-dark">
+                                                            In Review</p>
+                                                        <p
+                                                            class="text-xs text-text-secondary dark:text-text-secondary-dark">
+                                                            Processing</p>
+                                                    </div>
+                                                    <div class="flex flex-col items-center gap-2 text-center">
+                                                        <div
+                                                            class="size-4 rounded-full bg-border-light dark:bg-border-dark ring-4 ring-transparent flex items-center justify-center">
+                                                        </div>
+                                                        <p
+                                                            class="text-sm font-semibold text-text-secondary dark:text-text-secondary-dark">
+                                                            Refund Sent</p>
+                                                        <p
+                                                            class="text-xs text-text-secondary dark:text-text-secondary-dark">
+                                                            Est. Oct 28, 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="lg:col-span-2 bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+                                            <h2
+                                                class="text-text-primary dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">
+                                                Itemized Deductions</h2>
+                                            <div class="overflow-x-auto">
+                                                <table class="w-full text-left">
+                                                    <thead class="border-b border-border-light dark:border-border-dark">
+                                                        <tr>
+                                                            <th
+                                                                class="py-3 pr-4 text-sm font-semibold text-text-secondary dark:text-text-secondary-dark">
+                                                                Description</th>
+                                                            <th
+                                                                class="py-3 px-4 text-sm font-semibold text-text-secondary dark:text-text-secondary-dark">
+                                                                Reason</th>
+                                                            <th
+                                                                class="py-3 pl-4 text-right text-sm font-semibold text-text-secondary dark:text-text-secondary-dark">
+                                                                Amount</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr
+                                                            class="border-b border-border-light dark:border-border-dark">
+                                                            <td
+                                                                class="py-4 pr-4 text-sm text-text-primary dark:text-text-primary-dark">
+                                                                Wall Patching &amp; Painting</td>
+                                                            <td
+                                                                class="py-4 px-4 text-sm text-text-secondary dark:text-text-secondary-dark">
+                                                                Picture frame holes in living room</td>
+                                                            <td
+                                                                class="py-4 pl-4 text-right text-sm text-text-primary dark:text-text-primary-dark">
+                                                                -$125.00</td>
+                                                        </tr>
+                                                        <tr
+                                                            class="border-b border-border-light dark:border-border-dark">
+                                                            <td
+                                                                class="py-4 pr-4 text-sm text-text-primary dark:text-text-primary-dark">
+                                                                Carpet Cleaning Fee</td>
+                                                            <td
+                                                                class="py-4 px-4 text-sm text-text-secondary dark:text-text-secondary-dark">
+                                                                Standard cleaning as per lease agreement</td>
+                                                            <td
+                                                                class="py-4 pl-4 text-right text-sm text-text-primary dark:text-text-primary-dark">
+                                                                -$200.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                class="py-4 pr-4 text-sm text-text-primary dark:text-text-primary-dark">
+                                                                Broken Blind Replacement</td>
+                                                            <td
+                                                                class="py-4 px-4 text-sm text-text-secondary dark:text-text-secondary-dark">
+                                                                Kitchen window blind mechanism damaged</td>
+                                                            <td
+                                                                class="py-4 pl-4 text-right text-sm text-text-primary dark:text-text-primary-dark">
+                                                                -$75.50</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="lg:col-span-1 bg-card-light dark:bg-card-dark p-6 rounded-xl border border-border-light dark:border-border-dark flex flex-col justify-between">
+                                            <div>
+                                                <h2
+                                                    class="text-text-primary dark:text-text-primary-dark text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">
+                                                    Final Calculation</h2>
+                                                <div class="space-y-3">
+                                                    <div class="flex justify-between items-center text-sm">
+                                                        <p class="text-text-secondary dark:text-text-secondary-dark">
+                                                            Initial Deposit</p>
+                                                        <p
+                                                            class="font-medium text-text-primary dark:text-text-primary-dark">
+                                                            $2,500.00</p>
+                                                    </div>
+                                                    <div class="flex justify-between items-center text-sm">
+                                                        <p class="text-text-secondary dark:text-text-secondary-dark">
+                                                            Total Deductions</p>
+                                                        <p class="font-medium text-error">-$400.50</p>
+                                                    </div>
+                                                    <div
+                                                        class="border-t border-dashed border-border-light dark:border-border-dark my-3">
+                                                    </div>
+                                                    <div class="flex justify-between items-center text-lg">
+                                                        <p
+                                                            class="font-bold text-text-primary dark:text-text-primary-dark">
+                                                            Final Refund</p>
+                                                        <p class="font-bold text-success">$2,099.50</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="w-full mt-6 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary dark:text-blue-300 text-sm font-bold leading-normal tracking-[0.015em]">
+                                                <span class="material-symbols-outlined text-base">help_outline</span>
+                                                <span class="truncate">Dispute a Deduction</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

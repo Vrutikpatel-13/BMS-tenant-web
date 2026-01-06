@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Payment Receipts - Building Management System</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary dark:text-gray-200">
+    <div class="flex flex-row min-h-screen">
+       
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+                <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex flex-1 flex-col">
+
+                    <div class="relative flex min-h-screen w-full">
+            
+                        <!-- Main Content -->
+                        <main class="flex-1 p-8">
+                            <div class="max-w-7xl mx-auto">
+                               
+                                
+                                <!-- PageHeading -->
+                                <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+                                    <div class="flex min-w-72 flex-col gap-2">
+                                        <p
+                                            class="text-text-primary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">
+                                            Payment Receipts</p>
+                                        <p class="text-text-secondary text-base font-normal leading-normal">Here is a
+                                            list of all your past rent payments. Select 'Download PDF' for a detailed
+                                            record.</p>
+                                    </div>
+                                </div>
+                                <!-- Filters Section -->
+                                <div
+                                    class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+                                    <h3
+                                        class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] mb-4">
+                                        Filter by Date Range</h3>
+                                    <div class="flex flex-wrap items-end gap-4">
+                                        <label class="flex flex-col min-w-40 flex-1">
+                                            <p
+                                                class="text-text-primary dark:text-gray-300 text-sm font-medium leading-normal pb-2">
+                                                Start Date</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-gray-300 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-text-secondary p-[15px] text-base font-normal leading-normal"
+                                                placeholder="Select start date" type="date" value="" />
+                                        </label>
+                                        <label class="flex flex-col min-w-40 flex-1">
+                                            <p
+                                                class="text-text-primary dark:text-gray-300 text-sm font-medium leading-normal pb-2">
+                                                End Date</p>
+                                            <input
+                                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-gray-300 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 h-12 placeholder:text-text-secondary p-[15px] text-base font-normal leading-normal"
+                                                placeholder="Select end date" type="date" value="" />
+                                        </label>
+                                        <button
+                                            class="bg-primary text-white font-medium px-5 py-3 rounded-lg h-12 flex items-center justify-center gap-2 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">Apply
+                                            Filters</button>
+                                        <button
+                                            class="text-text-secondary font-medium px-4 py-3 h-12 flex items-center justify-center hover:text-primary dark:hover:text-primary-400">Clear
+                                            Filters</button>
+                                    </div>
+                                </div>
+                                <!-- Receipts Table -->
+                                <div class="mt-8 overflow-x-auto">
+                                    <div class="inline-block min-w-full align-middle">
+                                        <div
+                                            class="overflow-hidden border border-gray-200 dark:border-gray-700 rounded-xl">
+                                            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                                                <thead class="bg-gray-50 dark:bg-gray-800">
+                                                    <tr>
+                                                        <th class="px-6 py-4 text-left text-xs font-bold text-text-secondary uppercase tracking-wider"
+                                                            scope="col">Date</th>
+                                                        <th class="px-6 py-4 text-left text-xs font-bold text-text-secondary uppercase tracking-wider"
+                                                            scope="col">Amount</th>
+                                                        <th class="px-6 py-4 text-left text-xs font-bold text-text-secondary uppercase tracking-wider"
+                                                            scope="col">Payment Method</th>
+                                                        <th class="px-6 py-4 text-right text-xs font-bold text-text-secondary uppercase tracking-wider"
+                                                            scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody
+                                                    class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                                                    <tr>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary dark:text-white">
+                                                            October 1, 2023</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            $1,500.00 CAD</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            Credit Card</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                            <a class="flex items-center justify-end gap-2 text-primary hover:text-primary/80"
+                                                                href="#">
+                                                                <span
+                                                                    class="material-symbols-outlined text-base">download</span>
+                                                                Download PDF
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary dark:text-white">
+                                                            September 1, 2023</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            $1,500.00 CAD</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            Bank Transfer</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                            <a class="flex items-center justify-end gap-2 text-primary hover:text-primary/80"
+                                                                href="#">
+                                                                <span
+                                                                    class="material-symbols-outlined text-base">download</span>
+                                                                Download PDF
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary dark:text-white">
+                                                            August 1, 2023</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            $1,500.00 CAD</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            Credit Card</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                            <a class="flex items-center justify-end gap-2 text-primary hover:text-primary/80"
+                                                                href="#">
+                                                                <span
+                                                                    class="material-symbols-outlined text-base">download</span>
+                                                                Download PDF
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm font-medium text-text-primary dark:text-white">
+                                                            July 1, 2023</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            $1,500.00 CAD</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-sm text-text-secondary">
+                                                            Bank Transfer</td>
+                                                        <td
+                                                            class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                            <a class="flex items-center justify-end gap-2 text-primary hover:text-primary/80"
+                                                                href="#">
+                                                                <span
+                                                                    class="material-symbols-outlined text-base">download</span>
+                                                                Download PDF
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                 
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pagination -->
+                                <nav aria-label="Pagination"
+                                    class="flex items-center justify-between border-t border-gray-200 dark:border-gray-700 px-4 py-3 sm:px-6 mt-8">
+                                    <div class="hidden sm:block">
+                                        <p class="text-sm text-text-secondary">Showing <span
+                                                class="font-medium">1</span> to <span class="font-medium">4</span> of
+                                            <span class="font-medium">20</span> results</p>
+                                    </div>
+                                    <div class="flex flex-1 justify-between sm:justify-end gap-2">
+                                        <a class="relative inline-flex items-center rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-text-secondary hover:bg-gray-50 dark:hover:bg-gray-700"
+                                            href="#">Previous</a>
+                                        <a class="relative inline-flex items-center rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-sm font-medium text-text-secondary hover:bg-gray-50 dark:hover:bg-gray-700"
+                                            href="#">Next</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

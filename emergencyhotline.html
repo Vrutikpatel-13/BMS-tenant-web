@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Emergency Hotline - BMS Canada</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <div class="flex h-full flex-1">
+            <!-- SideNavBar -->
+            <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                    <div class="flex flex-col gap-4">
+                        <!-- User Profile Section -->
+                        <a href="../settings/tenantpersonalinfo.html"
+                            class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                data-alt="User profile picture"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                            </div>
+                            <div class="flex flex-col">
+                                <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John
+                                    Doe</h1>
+                                <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">
+                                    Property 101, Unit 5B</p>
+                            </div>
+                        </a>
+
+                        <!-- Navigation Links -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../dashboard/dashboard.html">
+                                <span class="material-symbols-outlined">dashboard</span>
+                                <p class="text-sm font-medium leading-normal">Dashboard</p>
+                            </a>
+                            <a class="nav-link" href="../amenities/aminitylist.html">
+                                <span class="material-symbols-outlined">apartment</span>
+                                <p class="text-sm font-medium leading-normal">Bookings</p>
+                            </a>
+                            <a class="nav-link" href="../payments/payment.html">
+                                <span class="material-symbols-outlined">payments</span>
+                                <p class="text-sm font-medium leading-normal">Payments</p>
+                            </a>
+
+                            <a class="nav-link" href="../settings/securitysettings.html">
+                                <span class="material-symbols-outlined">settings</span>
+                                <p class="text-sm font-medium leading-normal">Settings</p>
+                            </a>
+                            <a class="nav-link" href="../communications/notificationpreference.html">
+                                <span class="material-symbols-outlined">notifications</span>
+                                <p class="text-sm font-medium leading-normal">Notification</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Section -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../auth/login.html">
+                            <span class="material-symbols-outlined">logout</span>
+                            <p class="text-sm font-medium leading-normal">Logout</p>
+                        </a>
+                        <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20"
+                            href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">delete</span>
+                            <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!-- Main Content -->
+            <div class="flex flex-1 flex-col">
+
+                <main class="flex-1 overflow-y-auto p-6 lg:p-10">
+                    <div class="mx-auto max-w-4xl">
+                        <!-- Header Card -->
+                        <div
+                            class="flex flex-wrap items-center justify-between gap-4 rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm">
+                            <div class="flex flex-col gap-2">
+                                <p class="text-3xl font-black tracking-tight lg:text-4xl">Urgent Assistance</p>
+                                <p class="text-base text-text-secondary-light dark:text-text-secondary-dark">For urgent
+                                    property emergencies that require immediate attention, please use the button below.
+                                </p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-success/10 px-4">
+                                <span class="material-symbols-outlined text-lg text-success">timer</span>
+                                <p class="text-sm font-medium text-success">24/7 Availability</p>
+                            </div>
+                        </div>
+                        <!-- Main CTA Section -->
+                        <div
+                            class="mt-8 flex flex-col items-center justify-center rounded-lg bg-card-light dark:bg-card-dark p-8 text-center shadow-sm">
+                            <div
+                                class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-error/10 text-error">
+                                <span class="material-symbols-outlined text-4xl">call</span>
+                            </div>
+                            <h3 class="mb-2 text-2xl font-bold">Emergency Hotline</h3>
+                            <p class="mb-6 max-w-md text-text-secondary-light dark:text-text-secondary-dark">Tap the
+                                button to be connected immediately with our on-call maintenance team.</p>
+                            <a class="flex min-w-[84px] max-w-xs cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-lg h-14 bg-error px-8 text-white shadow-lg transition-transform hover:scale-105 active:scale-100"
+                                href="tel:+123458890">
+                                <span class="material-symbols-outlined text-2xl">call</span>
+                                <span class="truncate text-base font-bold tracking-wide">Call Now for Emergency</span>
+                            </a>
+                        </div>
+                        <!-- Additional Info Sections -->
+                        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+                            <!-- What is an Emergency? -->
+                            <div class="rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-xl text-warning">error</span>
+                                    <h4 class="text-lg font-bold">What is an Emergency?</h4>
+                                </div>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">Use the
+                                    hotline for critical issues that pose an immediate risk to health, safety, or
+                                    property.</p>
+                                <ul class="mt-4 space-y-2 text-sm">
+                                    <li class="flex items-start gap-2.5">
+                                        <span
+                                            class="material-symbols-outlined mt-0.5 text-base text-primary">check_circle</span>
+                                        <span>Major water leaks or flooding</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span
+                                            class="material-symbols-outlined mt-0.5 text-base text-primary">check_circle</span>
+                                        <span>No heat during winter months</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span
+                                            class="material-symbols-outlined mt-0.5 text-base text-primary">check_circle</span>
+                                        <span>Fire or strong smell of gas</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span
+                                            class="material-symbols-outlined mt-0.5 text-base text-primary">check_circle</span>
+                                        <span>Serious security risks (e.g., break-in)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- For Non-Urgent Requests -->
+                            <div class="rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-xl text-secondary">task_alt</span>
+                                    <h4 class="text-lg font-bold">For Non-Urgent Requests</h4>
+                                </div>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">For all
+                                    other maintenance issues, please submit a standard request through the portal for a
+                                    prompt response during business hours.</p>
+                                <a class="mt-4 inline-flex items-center justify-center gap-2 rounded-lg bg-primary/10 px-4 py-2.5 text-sm font-bold text-primary transition hover:bg-primary/20"
+                                    href="#">
+                                    <span>Submit Maintenance Request</span>
+                                    <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

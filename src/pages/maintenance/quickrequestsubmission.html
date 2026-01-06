@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>New Maintenance Request</title>
+    <link href="../../../css/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary dark:text-gray-200">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+                    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                        <div class="flex flex-col gap-4">
+                            <!-- User Profile Section -->
+                            <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                                    data-alt="User profile picture"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                                </div>
+                            </a>
+
+                            <!-- Navigation Links -->
+                            <div class="flex flex-col gap-2">
+                                <a class="nav-link" href="../dashboard/dashboard.html">
+                                    <span class="material-symbols-outlined">dashboard</span>
+                                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                                </a>
+                                <a class="nav-link" href="../amenities/aminitylist.html">
+                                    <span class="material-symbols-outlined">apartment</span>
+                                    <p class="text-sm font-medium leading-normal">Bookings</p>
+                                </a>
+                                <a class="nav-link" href="../payments/payment.html">
+                                    <span class="material-symbols-outlined">payments</span>
+                                    <p class="text-sm font-medium leading-normal">Payments</p>
+                                </a>
+                                
+                                <a class="nav-link" href="../settings/securitysettings.html">
+                                    <span class="material-symbols-outlined">settings</span>
+                                    <p class="text-sm font-medium leading-normal">Settings</p>
+                                </a>
+                                <a class="nav-link" href="../communications/notificationpreference.html">
+                                    <span class="material-symbols-outlined">notifications</span>
+                                    <p class="text-sm font-medium leading-normal">Notification</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Section -->
+                        <div class="flex flex-col gap-2">
+                            <a class="nav-link" href="../auth/login.html">
+                                <span class="material-symbols-outlined">logout</span>
+                                <p class="text-sm font-medium leading-normal">Logout</p>
+                            </a>
+                            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                                <span class="material-symbols-outlined">delete</span>
+                                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+        <div class="flex flex-1 flex-col">
+
+            <div class="flex flex-row min-h-screen">
+               
+                <div class="flex flex-1 flex-col">
+
+
+
+                    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+                        <div class="layout-container flex flex-1 flex-col">
+                            <div class="flex flex-1 justify-center py-5 sm:px-6 lg:px-8">
+                                <div class="layout-content-container flex flex-col w-full max-w-4xl flex-1">
+                                    <!-- TopNavBar -->
+                                    
+                                    <main class="mt-8">
+                                        <div
+                                            class="flex flex-col gap-8 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-sm">
+                                            <!-- PageHeading -->
+                                            <div
+                                                class="flex flex-wrap justify-between gap-3 pb-4 border-b border-gray-200 dark:border-gray-700">
+                                                <p
+                                                    class="text-text-primary dark:text-white text-3xl sm:text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">
+                                                    New Maintenance Request</p>
+                                            </div>
+                                            <!-- Section 1: Issue Category -->
+                                            <section>
+                                                <h3
+                                                    class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-1">
+                                                    What's the issue?</h3>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal pb-3 pt-0">
+                                                    Select a category</p>
+                                                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border-2 border-primary bg-primary/10 dark:bg-primary/20 p-4 items-center justify-center text-center">
+                                                        <span
+                                                            class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+                                                        <h2 class="text-primary text-base font-bold leading-tight">
+                                                            Plumbing</h2>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-4 items-center justify-center text-center hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10">
+                                                        <span
+                                                            class="material-symbols-outlined text-text-primary dark:text-gray-200 text-3xl">electrical_services</span>
+                                                        <h2
+                                                            class="text-text-primary dark:text-gray-200 text-base font-bold leading-tight">
+                                                            Electrical</h2>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-4 items-center justify-center text-center hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10">
+                                                        <span
+                                                            class="material-symbols-outlined text-text-primary dark:text-gray-200 text-3xl">thermostat</span>
+                                                        <h2
+                                                            class="text-text-primary dark:text-gray-200 text-base font-bold leading-tight">
+                                                            HVAC</h2>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-4 items-center justify-center text-center hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10">
+                                                        <span
+                                                            class="material-symbols-outlined text-text-primary dark:text-gray-200 text-3xl">microwave_gen</span>
+                                                        <h2
+                                                            class="text-text-primary dark:text-gray-200 text-base font-bold leading-tight">
+                                                            Appliance</h2>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-4 items-center justify-center text-center hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10">
+                                                        <span
+                                                            class="material-symbols-outlined text-text-primary dark:text-gray-200 text-3xl">pest_control</span>
+                                                        <h2
+                                                            class="text-text-primary dark:text-gray-200 text-base font-bold leading-tight">
+                                                            Pest Control</h2>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col cursor-pointer flex-1 gap-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 p-4 items-center justify-center text-center hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10">
+                                                        <span
+                                                            class="material-symbols-outlined text-text-primary dark:text-gray-200 text-3xl">build</span>
+                                                        <h2
+                                                            class="text-text-primary dark:text-gray-200 text-base font-bold leading-tight">
+                                                            General</h2>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- Section 2: Priority -->
+                                            <section>
+                                                <h3
+                                                    class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-1">
+                                                    How urgent is it?</h3>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal pb-3 pt-0">
+                                                    Select priority</p>
+                                                <div
+                                                    class="flex flex-col sm:flex-row gap-2 rounded-lg p-1 bg-gray-100 dark:bg-gray-900 w-full sm:w-auto">
+                                                    <button
+                                                        class="flex-1 px-4 py-2 text-sm font-semibold text-white bg-error rounded-md shadow-sm">Emergency</button>
+                                                    <button
+                                                        class="flex-1 px-4 py-2 text-sm font-semibold text-text-primary dark:text-gray-200 hover:bg-white dark:hover:bg-gray-700 rounded-md">Urgent</button>
+                                                    <button
+                                                        class="flex-1 px-4 py-2 text-sm font-semibold text-text-primary dark:text-gray-200 hover:bg-white dark:hover:bg-gray-700 rounded-md">Routine</button>
+                                                </div>
+                                                <div
+                                                    class="mt-2 p-3 rounded-lg bg-error/10 text-error-700 dark:text-error-300 text-sm flex items-start gap-2">
+                                                    <span
+                                                        class="material-symbols-outlined text-base mt-0.5">warning</span>
+                                                    <span>For immediate threats like fire or major flood, please call
+                                                        <strong>(555) 123-4567</strong> immediately.</span>
+                                                </div>
+                                            </section>
+                                            <!-- Section 3: Description -->
+                                            <section>
+                                                <h3
+                                                    class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-1">
+                                                    Describe the problem</h3>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal pb-3 pt-0">
+                                                    Please provide as much detail as possible</p>
+                                                <div class="relative">
+                                                    <textarea
+                                                        class="w-full rounded-lg border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary bg-white dark:bg-gray-700 dark:text-white"
+                                                        id="description" name="description"
+                                                        placeholder="e.g., The kitchen sink is clogged and water is not draining..."
+                                                        rows="5"></textarea>
+                                                    <button
+                                                        class="absolute bottom-3 right-3 text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+                                                        <span class="material-symbols-outlined">mic</span>
+                                                    </button>
+                                                </div>
+                                            </section>
+                                            <!-- Section 4: File Uploader -->
+                                            <section>
+                                                <h3
+                                                    class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-1">
+                                                    Add photos or video</h3>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal pb-3 pt-0">
+                                                    A picture can help us understand the issue better (Optional, up to 5
+                                                    files)</p>
+                                                <div class="flex items-center justify-center w-full">
+                                                    <label
+                                                        class="flex flex-col items-center justify-center w-full h-48 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                                                        for="dropzone-file">
+                                                        <div
+                                                            class="flex flex-col items-center justify-center pt-5 pb-6">
+                                                            <span
+                                                                class="material-symbols-outlined text-4xl text-gray-500 dark:text-gray-400">cloud_upload</span>
+                                                            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                                                <span class="font-semibold">Click to upload</span> or
+                                                                drag and drop</p>
+                                                            <p class="text-xs text-gray-500 dark:text-gray-400">SVG,
+                                                                PNG, JPG, MP4 or MOV (MAX. 10MB each)</p>
+                                                        </div>
+                                                        <input class="hidden" id="dropzone-file" multiple=""
+                                                            type="file" />
+                                                    </label>
+                                                </div>
+                                            </section>
+                                            <!-- Section 5: Access Time -->
+                                            <section>
+                                                <h3
+                                                    class="text-text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-0 pb-1">
+                                                    When can we access the unit?</h3>
+                                                <p
+                                                    class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal pb-3 pt-0">
+                                                    Select your preferred time slots</p>
+                                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                                    <div class="relative flex items-start">
+                                                        <div class="flex h-6 items-center">
+                                                            <input aria-describedby="morning-description"
+                                                                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                                                id="morning" name="morning" type="checkbox" />
+                                                        </div>
+                                                        <div class="ml-3 text-sm leading-6">
+                                                            <label
+                                                                class="font-medium text-text-primary dark:text-gray-200"
+                                                                for="morning">Morning</label>
+                                                            <p class="text-text-secondary dark:text-gray-400"
+                                                                id="morning-description">9am - 12pm</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative flex items-start">
+                                                        <div class="flex h-6 items-center">
+                                                            <input aria-describedby="afternoon-description"
+                                                                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                                                id="afternoon" name="afternoon" type="checkbox" />
+                                                        </div>
+                                                        <div class="ml-3 text-sm leading-6">
+                                                            <label
+                                                                class="font-medium text-text-primary dark:text-gray-200"
+                                                                for="afternoon">Afternoon</label>
+                                                            <p class="text-text-secondary dark:text-gray-400"
+                                                                id="afternoon-description">12pm - 5pm</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative flex items-start">
+                                                        <div class="flex h-6 items-center">
+                                                            <input aria-describedby="evening-description"
+                                                                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                                                id="evening" name="evening" type="checkbox" />
+                                                        </div>
+                                                        <div class="ml-3 text-sm leading-6">
+                                                            <label
+                                                                class="font-medium text-text-primary dark:text-gray-200"
+                                                                for="evening">Evening</label>
+                                                            <p class="text-text-secondary dark:text-gray-400"
+                                                                id="evening-description">5pm - 8pm</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative flex items-start">
+                                                        <div class="flex h-6 items-center">
+                                                            <input aria-describedby="anytime-description"
+                                                                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                                                id="anytime" name="anytime" type="checkbox" />
+                                                        </div>
+                                                        <div class="ml-3 text-sm leading-6">
+                                                            <label
+                                                                class="font-medium text-text-primary dark:text-gray-200"
+                                                                for="anytime">Anytime</label>
+                                                            <p class="text-text-secondary dark:text-gray-400"
+                                                                id="anytime-description">Staff can enter</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <!-- Footer: Submit Button -->
+                                            <footer
+                                                class="pt-6 border-t border-gray-200 dark:border-gray-700 mt-4 flex justify-end">
+                                                <a href="../maintenance/requesttracking.html"
+                                                    class="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-semibold leading-6 text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50"
+                                                    disabled="" type="submit">Submit Request
+                                                </a>
+                                            </footer>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

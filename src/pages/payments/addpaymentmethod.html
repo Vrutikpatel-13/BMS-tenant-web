@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Add New Payment Method</title>
+    <link href="../../../css/output.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light text-text-primary-light">
+    <div class="flex flex-row min-h-screen">
+        <!-- Side Navigation Bar Component -->
+        <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+            <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+                <div class="flex flex-col gap-4">
+                    <!-- User Profile Section -->
+                    <a href="../settings/tenantpersonalinfo.html" class="flex gap-3 items-center hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-2 transition-colors">
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                            data-alt="User profile picture"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                        </div>
+                        <div class="flex flex-col">
+                            <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                            <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                        </div>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="flex flex-col gap-2">
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <p class="text-sm font-medium leading-normal">Dashboard</p>
+                        </a>
+                        <a class="nav-link" href="../dashboard/dashboard.html">
+                            <span class="material-symbols-outlined">apartment</span>
+                            <p class="text-sm font-medium leading-normal">Bookings</p>
+                        </a>
+                        <a class="nav-link" href="../payments/payment.html">
+                            <span class="material-symbols-outlined">payments</span>
+                            <p class="text-sm font-medium leading-normal">Payments</p>
+                        </a>
+                        <a class="nav-link" href="../settings/securitysettings.html">
+                            <span class="material-symbols-outlined">settings</span>
+                            <p class="text-sm font-medium leading-normal">Settings</p>
+                        </a>
+                        <a class="nav-link" href="../communications/notificationpreference.html">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <p class="text-sm font-medium leading-normal">Notification</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="flex flex-col gap-2">
+                    <a class="nav-link" href="../auth/login.html">
+                        <span class="material-symbols-outlined">logout</span>
+                        <p class="text-sm font-medium leading-normal">Logout</p>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20">
+                        <span class="material-symbols-outlined">delete</span>
+                        <p class="text-sm font-medium leading-normal">Delete My Account</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="flex flex-1 flex-col">
+            <!-- Main Content -->
+            <main class="flex flex-1 p-8">
+                <div class="max-w-6xl w-full mx-auto">
+                    <!-- Breadcrumbs -->
+                    <!-- <div class="flex flex-wrap gap-2 mb-6">
+                        <a class="text-text-secondary dark:text-gray-400 text-base font-medium leading-normal hover:text-primary"
+                            href="../dashboard/dashboard.html">Dashboard</a>
+                        <span class="text-text-secondary dark:text-gray-400 text-base font-medium leading-normal">/</span>
+                        <a class="text-text-secondary dark:text-gray-400 text-base font-medium leading-normal hover:text-primary"
+                            href="../payments/payment.html">Payments</a>
+                        <span class="text-text-secondary dark:text-gray-400 text-base font-medium leading-normal">/</span>
+                        <span class="text-text-primary dark:text-white text-base font-medium leading-normal">Add
+                            Method</span>
+                    </div> -->
+                    <!-- PageHeading -->
+                    <div class="flex flex-wrap justify-between gap-3 mb-8">
+                        <h1
+                            class="text-text-primary dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">
+                            Add New Payment Method</h1>
+                    </div>
+                    <!-- Form Container -->
+                    <div
+                        class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+                        <h2 class="text-xl font-bold text-text-primary dark:text-white mb-6">Card Details</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Card Number -->
+                            <div class="md:col-span-2">
+                                <label class="flex flex-col w-full">
+                                    <p
+                                        class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                        Card Number
+                                    </p>
+                                    <div class="flex w-full flex-1 items-stretch rounded-lg">
+                                        <input
+                                            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                                            placeholder="0000 0000 0000 0000" value="" />
+                                        <div
+                                            class="text-text-secondary dark:text-gray-400 flex border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700/50 items-center justify-center px-4 rounded-r-lg border-l-0">
+                                            <span class="material-symbols-outlined">credit_card</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- Expiry Date and CVV -->
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <p
+                                    class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                    Expiry Date
+                                </p>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base font-normal leading-normal"
+                                    placeholder="MM/YY" value="" />
+                            </label>
+                            <label class="flex flex-col min-w-40 flex-1">
+                                <div class="flex items-center justify-between pb-2">
+                                    <p
+                                        class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal">
+                                        CVV</p>
+                                    <div class="relative group">
+                                        <span
+                                            class="material-symbols-outlined text-text-secondary dark:text-gray-400 text-xl cursor-pointer">help</span>
+                                        <div
+                                            class="absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                                            3 or 4 digits on the back of your card</div>
+                                    </div>
+                                </div>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base font-normal leading-normal"
+                                    placeholder="123" value="" />
+                            </label>
+                            <!-- Cardholder Name -->
+                            <div class="md:col-span-2">
+                                <label class="flex flex-col min-w-40 flex-1">
+                                    <p
+                                        class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                        Cardholder
+                                        Name</p>
+                                    <input
+                                        class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base font-normal leading-normal"
+                                        placeholder="John Doe" value="" />
+                                </label>
+                            </div>
+                            <!-- Billing Address Section -->
+                            <div class="md:col-span-2 pt-4 border-t border-gray-200 dark:border-gray-700">
+                                <h3 class="text-lg font-bold text-text-primary dark:text-white mb-4">Billing Address
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="md:col-span-2">
+                                        <label class="flex flex-col">
+                                            <p
+                                                class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                                Street
+                                                Address</p>
+                                            <input
+                                                class="form-input flex w-full rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base"
+                                                placeholder="123 Main St" />
+                                        </label>
+                                    </div>
+                                    <label class="flex flex-col">
+                                        <p
+                                            class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                            City</p>
+                                        <input
+                                            class="form-input flex w-full rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base"
+                                            placeholder="Toronto" />
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <p
+                                            class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                            Province
+                                        </p>
+                                        <input
+                                            class="form-input flex w-full rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base"
+                                            placeholder="Ontario" />
+                                    </label>
+                                    <label class="flex flex-col">
+                                        <p
+                                            class="text-text-primary dark:text-gray-200 text-base font-medium leading-normal pb-2">
+                                            Postal
+                                            Code</p>
+                                        <input
+                                            class="form-input flex w-full rounded-lg text-text-primary dark:text-white dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-primary dark:focus:border-primary h-14 placeholder:text-text-secondary p-[15px] text-base"
+                                            placeholder="A1B 2C3" />
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Checkbox and Security -->
+                            <div class="md:col-span-2 pt-6 border-t border-gray-200 dark:border-gray-700">
+                                <div class="flex items-center">
+                                    <input checked=""
+                                        class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                                        id="save-card-checkbox" type="checkbox" />
+                                    <label class="ml-2 block text-sm text-text-primary dark:text-gray-200"
+                                        for="save-card-checkbox">Save
+                                        this card for future payments</label>
+                                </div>
+                            </div>
+                            <!-- Action Buttons and Security Badge -->
+                            <div
+                                class="md:col-span-2 flex flex-col sm:flex-row items-center justify-between gap-4 mt-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-green-500">verified_user</span>
+                                    <div class="text-sm">
+                                        <p class="font-bold text-text-primary dark:text-white">PCI-DSS Compliant</p>
+                                        <p class="text-text-secondary dark:text-gray-400">Your payment information is
+                                            secure.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <button
+                                        class="flex items-center justify-center rounded-lg h-12 px-6 bg-gray-100 dark:bg-gray-700 text-text-primary dark:text-white text-base font-bold hover:bg-gray-200 dark:hover:bg-gray-600">
+                                        Cancel
+                                    </button>
+                                    <a href="../payments/payment.html"
+                                        class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold hover:bg-primary/90">
+                                        Add Card
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manage Payment Methods - PropertEase</title>
+<link href="../../../css/output.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-row min-h-screen">
+    <!-- Side Navigation Bar Component -->
+<div class="w-64 border-r border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 flex-shrink-0">
+    <div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+        <div class="flex flex-col gap-4">
+            <!-- User Profile Section -->
+            <div class="flex gap-3 items-center">
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                    data-alt="User profile picture"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALCC5dkHXY4CWQQdHEcxUmOjt7kpiC7ixIaQboKmmEzJ9XPG9BsRgC6UGsreGUNN8S2gcfZh76KLJgdx28FRGKTOZ85VHhZPEhY9fnfL1zyokgB3cMJGnpNcrqQGZFd9Ei5VuHedwbIvNTHHVsE4qEXknkRRE0LcOiylPXBJC-0UbdXr4bXzFtjyQMBBFAr7VhfN7lpUq_end9T56XXDE_rNr4lm--OQxfG4j8kIywthYrO_il3ghL_v0Khpf_rI1-PRJXLQwP4mE");'>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-text-primary dark:text-white text-base font-medium leading-normal">John Doe</h1>
+                    <p class="text-text-secondary dark:text-gray-400 text-sm font-normal leading-normal">Property 101, Unit 5B</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-col gap-2">
+                <a class="nav-link" href="../dashboard/dashboard.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p class="text-sm font-medium leading-normal">Dashboard</p>
+                </a>
+                <a class="nav-link" href="#">
+                    <span class="material-symbols-outlined">apartment</span>
+                    <p class="text-sm font-medium leading-normal">Properties</p>
+                </a>
+                <a class="nav-link" href="../payments/payment.html">
+                    <span class="material-symbols-outlined">payments</span>
+                    <p class="text-sm font-medium leading-normal">Payments</p>
+                </a>
+                <a class="nav-link" href="../settings/securitysettings.html">
+                    <span class="material-symbols-outlined">settings</span>
+                    <p class="text-sm font-medium leading-normal">Settings</p>
+                </a>
+                <a class="nav-link" href="../communications/notificationpreference.html">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <p class="text-sm font-medium leading-normal">Notification</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="flex flex-col gap-2">
+            <a class="nav-link" href="../auth/login.html">
+                <span class="material-symbols-outlined">logout</span>
+                <p class="text-sm font-medium leading-normal">Logout</p>
+            </a>
+            <a class="nav-link text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/20" href="#">
+                <span class="material-symbols-outlined">delete</span>
+                <p class="text-sm font-medium leading-normal">Delete My Account</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div class="flex flex-1 flex-col">
+        
+<div class="flex flex-row min-h-screen">
+    <aside class="flex flex-col w-64 bg-white border-r border-border-light shrink-0">
+<div class="flex flex-col grow p-4">
+<div class="flex items-center gap-3 mb-8">
+<div class="bg-primary rounded-full size-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 24px;">apartment</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-text-primary text-base font-bold leading-normal">John Tenant</h1>
+<p class="text-text-secondary text-sm font-normal leading-normal">Apt 402</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../dashboard/dashboard.html">
+<span class="material-symbols-outlined text-text-secondary">dashboard</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../settings/tenantpersonalinfo.html">
+<span class="material-symbols-outlined text-text-secondary">person</span>
+<p class="text-text-primary text-sm font-medium leading-normal">My Profile</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../documents/documentslibrary.html">
+<span class="material-symbols-outlined text-text-secondary">description</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Documents</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">history</span>
+<p class="text-primary text-sm font-medium leading-normal">Request History</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../maintenance/quickrequestsubmission.html">
+<span class="material-symbols-outlined text-text-secondary">add_comment</span>
+<p class="text-text-primary text-sm font-medium leading-normal">New Request</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4 p-4 border-t border-border-light">
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="../settings/securitysettings.html">
+<span class="material-symbols-outlined text-text-secondary">settings</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Settings</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-text-secondary">help</span>
+<p class="text-text-primary text-sm font-medium leading-normal">Help</p>
+</a>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-100 hover:bg-gray-200 text-text-primary text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Logout</span>
+</button>
+</div>
+</aside>
+    <div class="flex flex-1 flex-col">
+        
+
+
+<div class="flex h-screen w-full">
+<!-- SideNavBar -->
+<aside class="w-64 flex-shrink-0 bg-[#111318] p-4 flex flex-col justify-between">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3 px-3">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight">PropertEase</h2>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-xl">grid_view</span>
+<p class="text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 text-primary" href="#">
+<span class="material-symbols-outlined text-xl">credit_card</span>
+<p class="text-sm font-medium leading-normal">Billing</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-xl">build</span>
+<p class="text-sm font-medium leading-normal">Maintenance</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-xl">description</span>
+<p class="text-sm font-medium leading-normal">Documents</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-xl">forum</span>
+<p class="text-sm font-medium leading-normal">Messages</p>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10 cursor-pointer">
+<span class="material-symbols-outlined text-xl">settings</span>
+<p class="text-sm font-medium leading-normal">Settings</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary-dark hover:bg-white/10 cursor-pointer">
+<span class="material-symbols-outlined text-xl">logout</span>
+<p class="text-sm font-medium leading-normal">Logout</p>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col overflow-y-auto">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-10 py-3 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex items-center gap-4 text-text-primary-light dark:text-text-primary-dark">
+<!-- This area can be used for search or other header elements if needed -->
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white dark:bg-border-dark text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white dark:bg-border-dark text-text-secondary-light dark:text-text-secondary-dark hover:bg-gray-100 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">help</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5sBWW4gWEFuxwYKmX6z-NZ00saSM1PS_5IFCjMLrBPa96iK-YSO2C85N85QpnjUB7EoUlJut5Yld8GHSV-7z3yZNoCzfA_6J_XoFY16Sv4gEno-WNowN_ujxYQxa70BpZLqUM0tekfMv6jWx9J14WJTOjv1zj71YdAyZ4a-JuL-CKGDTcCPj7fpA4Yi8Pw6to6mmZ2FjAMWQl2LT_ns1tBxtvQaG1kVirRIs_NxaJQDRVaOYA_LM4xp8YEXd2B9TI7rDlENsTBfU");'></div>
+<div class="flex flex-col text-left">
+<h1 class="text-text-primary-light dark:text-text-primary-dark text-sm font-semibold leading-normal">John Doe</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-xs font-normal leading-normal">Apt 4B, 123 Maple St</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<div class="p-6 lg:p-10">
+<div class="max-w-4xl mx-auto">
+<!-- Breadcrumbs & Page Heading -->
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex flex-wrap items-center gap-2">
+<a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary" href="#">Dashboard</a>
+<span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+<a class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal hover:text-primary" href="#">Billing</a>
+<span class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-medium leading-normal">/</span>
+<span class="text-text-primary-light dark:text-text-primary-dark text-sm font-medium leading-normal">Payment Methods</span>
+</div>
+<div class="flex flex-wrap justify-between items-center gap-3">
+<p class="text-text-primary-light dark:text-text-primary-dark text-3xl font-bold leading-tight tracking-tight">Manage Payment Methods</p>
+<button class="flex items-center justify-center gap-2 h-10 px-5 bg-primary text-white rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-lg">add</span>
+<span>Add New Card</span>
+</button>
+</div>
+</div>
+<!-- Saved Payment Methods Section -->
+<div class="mb-10">
+<h2 class="text-text-primary-light dark:text-text-primary-dark text-lg font-semibold leading-tight tracking-tight pb-4 border-b border-border-light dark:border-border-dark mb-4">Saved Payment Methods</h2>
+<div class="flex flex-col gap-4">
+<!-- Payment Method Card 1 (Default) -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-lg border-2 border-primary bg-primary/5">
+<div class="flex items-center gap-4">
+<img class="h-6" data-alt="Visa card logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUlwxuy1KPgxxE5u_B4g2kzwzeHjAhorQYVsRDRnhUwJam_WExV8v_8CFPiSXhM0IhW-aOzNokmuuSvKuol2n_nOZbZPDz47T3b0qX2jCPLhizUgm5-UhCp-hEk0SGXoi65kiiOVIe6TLR-y9KUJM6H7WzKhzV05bIilk7edoXjEwwgEySaeMNSf1XKVCcBf-CTNW4mxvnyaYq3mSTDjKobqP92bm8iCOvGm8kZnNKWtjaQZR7jfGvCmcd4PuZkchkkqOrRKYBFkU"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-text-primary-light dark:text-text-primary-dark font-semibold">Visa ending in 1234</h3>
+<span class="px-2 py-0.5 text-xs font-medium rounded-full bg-secondary text-white">Default</span>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">Expires 08/2026</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center h-9 w-9 text-text-secondary-light dark:text-text-secondary-dark hover:bg-black/5 dark:hover:bg-white/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Payment Method Card 2 -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-border-dark hover:border-primary/50 dark:hover:border-primary/50">
+<div class="flex items-center gap-4">
+<img class="h-6" data-alt="Mastercard logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSiJz9ayovSbEP9N5Vnz4eE73pFRy14IA0FWh-WeY2dO6iJntwmOEvKE843eYskjXR_lyyt3TZQwlqctIV7RSs41q7CrtZ_KmT3Tr2K5WmtCYsvffVjPIJ0cyUpJMPh3jZQpeE954JCnJLbZnp53oxUNwoeVIbDaN-w-9hcBmNWw9-8oiwDrs8Jq0reXlA9hKt3vUMz9ItvLLs2dIeoQvi4-weC4gtA4UxyeCVfl1O7pbyNVbDygZ88GYvi7yPzZ8olsTpC1wMSAc"/>
+<div>
+<h3 class="text-text-primary-light dark:text-text-primary-dark font-semibold">Mastercard ending in 5678</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm">Expires 11/2025</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-primary text-sm font-semibold hover:underline">Set as Default</button>
+<button class="flex items-center justify-center h-9 w-9 text-text-secondary-light dark:text-text-secondary-dark hover:bg-black/5 dark:hover:bg-white/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Auto-Pay Settings Section -->
+<div>
+<h2 class="text-text-primary-light dark:text-text-primary-dark text-lg font-semibold leading-tight tracking-tight pb-4 border-b border-border-light dark:border-border-dark mb-4">Auto-Pay Settings</h2>
+<div class="p-5 rounded-lg bg-white dark:bg-border-dark border border-border-light dark:border-border-dark">
+<div class="flex flex-wrap justify-between items-start gap-4">
+<div>
+<h3 class="text-text-primary-light dark:text-text-primary-dark font-semibold">Automatic Payments</h3>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm mt-1 max-w-md">Enable Auto-Pay to automatically pay your rent on the due date using your default payment method. You will be notified 3 days before any payment is processed.</p>
+</div>
+<div class="flex items-center">
+<input checked="" class="peer sr-only" id="auto-pay-toggle" type="checkbox"/>
+<label class="relative w-11 h-6 bg-gray-200 dark:bg-gray-600 rounded-full cursor-pointer transition-colors peer-checked:bg-primary after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full peer-checked:after:border-white" for="auto-pay-toggle"></label>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-border-light dark:border-border-dark">
+<p class="text-sm text-success flex items-center gap-2">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Auto-Pay is <span class="font-semibold">active</span>. Your Visa (**** 1234) will be charged on the 1st of each month.</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Security Footer -->
+<div class="mt-10 text-center">
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">lock</span>
+                            Your payment information is stored securely and processed by Stripe.
+                        </p>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+</body></html>
